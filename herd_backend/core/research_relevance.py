@@ -121,3 +121,7 @@ def get_research_relevance_citations(db_path='../data/db.sqlite3',
         plt.show()
 
     return df.to_json(orient='columns')
+
+
+if __name__ == "__main__":
+    print(get_research_relevance_table())
