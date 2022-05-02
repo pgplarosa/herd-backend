@@ -13,3 +13,7 @@
 ### patch
 
 - Fix for bugs
+
+
+# version 1.1.0
+- added faculty profile
