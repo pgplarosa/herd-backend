@@ -44,16 +44,12 @@ def get_research_funding_forecast(request):
 ######################################
 
 def get_utilization_table(request):
-    data = utilization_table()
-    metadata = {
-        "columns": get_columns(data)
-    }
-    return makeJsonResponse(data, metadata, is_modified=True)
-
+    return JsonResponse(invert_table(utilization_table()), safe=False)
+    
 #  charts
 
 def get_utilization_product_per_univ(request):
-    return makeJsonResponse(util_product_per_univ())
+    return JsonResponse(create_stacked_bar_chart_data(util_product_per_univ()), safe=False)
 
 def get_utilization_topics(request):
     return makeJsonResponse(util_topics())
@@ -70,8 +66,4 @@ def get_utilization_forecast(request):
 ######################################
 
 def get_regional_development_table(request):
-    data = regional_development_table()
-    metadata = {
-        "columns": get_columns(data)
-    }
-    return makeJsonResponse(data, metadata, is_modified=True)
+    return JsonResponse(invert_table(regional_development_table()), safe=False)
