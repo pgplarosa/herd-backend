@@ -1,6 +1,39 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.conf import settings
+from django.http import JsonResponse
+from core.research_relevance import get_research_relevance_table as research_relevance_table
+from core.research_relevance import get_research_relevance_scope as research_relevance
+from core.research_relevance import get_research_relevance_citations as citations
+from core.patent import get_patent_table as patents_table
+from core.patent import get_patent_type_univ as patent_type_per_university
+from core.patent import get_patent_type as patents_per_type
+from core.patent import get_patent_status as patents_per_status
+from core.patent import get_patent_yearly as patents_forecast
 
-def get_research_relevance_table():
-    return HttpResponse()
+from core.utilities import process_for_response, get_columns, convert_to_json, invert_table, create_stacked_bar_chart_data
+
+
+def get_research_relevance_table(request):
+    return JsonResponse(invert_table(research_relevance_table()), safe=False)
+
+def get_research_relevance_scope(request):
+    return JsonResponse(convert_to_json(research_relevance()), safe=False)
+
+def get_citations(request):
+    return JsonResponse(convert_to_json(citations()), safe=False)
+
+def get_patents(request):
+    return JsonResponse(invert_table(patents_table()), safe=False)
+
+def get_patent_type_per_university(request):
+    return JsonResponse(create_stacked_bar_chart_data(patent_type_per_university()), safe=False)
+
+def get_patents_per_type(request):
+    return JsonResponse(convert_to_json(patents_per_type()), safe=False)
+
+def get_patents_per_status(request):
+    return JsonResponse(convert_to_json(patents_per_status()), safe=False)
+
+def get_patents_forecast(request):
+    return JsonResponse(convert_to_json(patents_forecast()), safe=False)

@@ -3,8 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
+import os
 
-def get_research_cost_table(db_path='../data/db.sqlite3',
+def get_research_cost_table(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                         show=False):
     """ outputs a table with columns: title, author, university, budget, 
         funding agency, source, funding type
@@ -51,7 +52,7 @@ def get_research_cost_table(db_path='../data/db.sqlite3',
         display(df)
     return df.to_json(orient='columns')
 
-def get_research_cost_budget(db_path='../data/db.sqlite3',
+def get_research_cost_budget(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                          top=10,
                          plot=False):
     """ get the top budget for research
@@ -93,7 +94,7 @@ def get_research_cost_budget(db_path='../data/db.sqlite3',
         plt.show()
     return df.to_json(orient='columns')
 
-def get_research_cost_funding_type(db_path='../data/db.sqlite3',
+def get_research_cost_funding_type(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                                plot=False):
     """ get the count of funding type as either commissioned or grant
     
@@ -131,7 +132,7 @@ def get_research_cost_funding_type(db_path='../data/db.sqlite3',
 
     return df.to_json(orient='columns')
 
-def get_research_cost_funding_source(db_path='../data/db.sqlite3',
+def get_research_cost_funding_source(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                                  plot=False):
     """ get the count of funding source of the research
     
@@ -169,7 +170,7 @@ def get_research_cost_funding_source(db_path='../data/db.sqlite3',
 
     return df.to_json(orient='columns')
 
-def get_research_cost_budget_line(db_path='../data/db.sqlite3',
+def get_research_cost_budget_line(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                               plot=False):
     """ get the yearly budget for research 
     
@@ -213,3 +214,7 @@ def get_research_cost_budget_line(db_path='../data/db.sqlite3',
         plt.show()
 
     return df.to_json(orient='columns')
+
+
+if __name__ == "__main__":
+    print(get_research_cost_budget())

@@ -3,8 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
+import os
 
-def get_faculty_profile_table(db_path='../data/db.sqlite3',
+def get_faculty_profile_table(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                              show=False):
     """ outputs a table with columns: name, education, 
         position, interests
@@ -39,7 +40,7 @@ def get_faculty_profile_table(db_path='../data/db.sqlite3',
         display(df)
     return df.to_json(orient='columns')
 
-def get_faculty_educ_attain(db_path='../data/db.sqlite3',
+def get_faculty_educ_attain(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                             plot=False):
     """ count the number of highest educ attainment per university
     

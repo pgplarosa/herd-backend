@@ -5,3 +5,7 @@
 # pycaches
 
 *__pycache__*
+
+#  IDEs
+
+*.idea*
