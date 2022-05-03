@@ -12,6 +12,8 @@ from core.utilization import get_utilization_topics as util_topics
 from core.utilization import get_utilization_beneficiaries as util_beneficiaries
 from core.utilization import get_utilization_yearly as utilization_forecast
 
+from core.regional_development import get_regional_development_table as regional_development_table
+
 from core.utilities import makeJsonResponse, get_columns, process_for_response
 
 from django.http import JsonResponse
@@ -65,3 +67,15 @@ def get_beneficiaries_per_university(request):
 
 def get_utilization_forecast(request):
     return makeJsonResponse(utilization_forecast())
+
+
+######################################
+#      REGIONAL DEVELOPMENT          #
+######################################
+
+def get_regional_development_table(request):
+    data = regional_development_table()
+    metadata = {
+        "columns": get_columns(data)
+    }
+    return makeJsonResponse(data, metadata, is_modified=True)
