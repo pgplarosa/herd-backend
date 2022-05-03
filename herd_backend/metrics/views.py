@@ -14,7 +14,7 @@ from core.utilization import get_utilization_yearly as utilization_forecast
 
 from core.regional_development import get_regional_development_table as regional_development_table
 
-from core.utilities import makeJsonResponse, get_columns, process_for_response
+from core.utilities import makeJsonResponse, get_columns, process_for_response, invert_table, create_stacked_bar_chart_data
 
 from django.http import JsonResponse
 
@@ -23,11 +23,7 @@ from django.http import JsonResponse
 ######################################
 
 def get_research_cost(request):
-    data = research_cost_table()
-    metadata = {
-        "columns": get_columns(data)
-    }
-    return makeJsonResponse(data, metadata, is_modified=True)
+    return JsonResponse(invert_table(research_cost_table()), safe=False)
 
 # chart data
 
@@ -35,7 +31,7 @@ def get_research_funding(request):
     return makeJsonResponse(get_research_cost_budget())
 
 def get_research_funding_type(request):
-    return makeJsonResponse(funding_type())
+    return JsonResponse(create_stacked_bar_chart_data(funding_type()), safe=False)
 
 def get_research_funding_source(request):
     return makeJsonResponse(funding_source())
