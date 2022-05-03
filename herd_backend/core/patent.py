@@ -48,7 +48,7 @@ def get_patent_table(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
         
     return df.to_json(orient='columns')
     
-def get_patent_type_univ(db_path='../data/db.sqlite3',
+def get_patent_type_univ(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                     plot=False):
     """ count the number of research type per university
     
@@ -93,7 +93,7 @@ def get_patent_type_univ(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_patent_type(db_path='../data/db.sqlite3',
+def get_patent_type(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                     plot=False):
     """ count the number of research type
     
@@ -131,7 +131,7 @@ def get_patent_type(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_patent_status(db_path='../data/db.sqlite3',
+def get_patent_status(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                       plot=False):
     """ count the number of research status
     
@@ -169,7 +169,7 @@ def get_patent_status(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_patent_yearly(db_path='../data/db.sqlite3',
+def get_patent_yearly(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                       plot=False):
     """ count the number of patents per year
     

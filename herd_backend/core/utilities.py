@@ -9,3 +9,6 @@ def process_for_response(raw_data, metadata=None):
 
 def get_columns(raw_data: str):
     return list(json.loads(raw_data).keys())
+
+def convert_to_json(raw: str):
+    return json.loads(raw)
