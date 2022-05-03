@@ -3,8 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
+import os
 
-def get_patent_table(db_path='../data/db.sqlite3',
+def get_patent_table(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
                      show=False):
     """ outputs a table with columns: patent_filed, patent_type, status, 
         date_register, author, school
@@ -45,7 +46,7 @@ def get_patent_table(db_path='../data/db.sqlite3',
     if show:
         display(df)
         
-    return df
+    return df.to_json(orient='columns')
     
 def get_patent_type_univ(db_path='../data/db.sqlite3',
                     plot=False):
@@ -204,5 +205,3 @@ def get_patent_yearly(db_path='../data/db.sqlite3',
         plt.show()
         
     return df.to_json(orient='columns')
-
-patent_yearly = get_patent_yearly(plot=True)
