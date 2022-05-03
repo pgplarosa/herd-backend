@@ -52,9 +52,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://localhost:3000",
+    'http://qa-herd-app-react.s3-website-ap-southeast-1.amazonaws.com',
 ]
 
 ROOT_URLCONF = 'herd_backend.urls'
