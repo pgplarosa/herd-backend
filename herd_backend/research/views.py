@@ -7,6 +7,9 @@ from core.research_relevance import get_research_relevance_scope as research_rel
 from core.research_relevance import get_research_relevance_citations as citations
 from core.patent import get_patent_table as patents_table
 from core.patent import get_patent_type_univ as patent_type_per_university
+from core.patent import get_patent_type as patents_per_type
+from core.patent import get_patent_status as patents_per_status
+from core.patent import get_patent_yearly as patents_forecast
 
 from core.utilities import process_for_response, get_columns, convert_to_json
 
@@ -33,3 +36,12 @@ def get_patents(request):
 
 def get_patent_type_per_university(request):
     return JsonResponse(convert_to_json(patent_type_per_university()), safe=False)
+
+def get_patents_per_type(request):
+    return JsonResponse(convert_to_json(patents_per_type()), safe=False)
+
+def get_patents_per_status(request):
+    return JsonResponse(convert_to_json(patents_per_status()), safe=False)
+
+def get_patents_forecast(request):
+    return JsonResponse(convert_to_json(patents_forecast()), safe=False)
