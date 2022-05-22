@@ -3,9 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
-import os
 
-def get_faculty_profile_table(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
+def get_faculty_profile_table(db_path='../data/db.sqlite3',
                              show=False):
     """ outputs a table with columns: name, education, 
         position, interests
@@ -40,7 +39,7 @@ def get_faculty_profile_table(db_path=os.path.abspath('../herd_backend/data/db.s
         display(df)
     return df.to_json(orient='columns')
 
-def get_faculty_educ_attain(db_path=os.path.abspath('../herd_backend/data/db.sqlite3'),
+def get_faculty_educ_attain(db_path='../data/db.sqlite3',
                             plot=False):
     """ count the number of highest educ attainment per university
     
@@ -70,8 +69,50 @@ def get_faculty_educ_attain(db_path=os.path.abspath('../herd_backend/data/db.sql
     
     df = pd.crosstab(df.University, 
                      df.Education).sort_index(ascending=False)
+    
+    df = df.sum(axis=1)
     if plot:
-        df.plot.barh(stacked=True)
+        df.plot.barh()
         plt.show()
+
+    return df.to_json(orient='columns')
+
+def get_faculty_educ_attain_break(school_name, 
+                                  db_path='../data/db.sqlite3',
+                                  show=False):
+    """ count the number of highest educ attainment per university
+    
+    Parameters
+    ===========
+    db_path      :      str
+                        path of sqlite database
+    show         :      bool
+                        display table if set to true
+    
+    Returns
+    ===========
+    get_faculty_profile_table    :   str
+                                     json string
+    """
+    engine = create_engine('sqlite:///' + db_path)
+    query = f"""
+    SELECT sc.school_name as University,
+           fa.highest_educ_attain as Education
+    FROM faculty fa
+    LEFT OUTER JOIN school sc
+    on fa.school_id = sc.school_id
+    WHERE University = "{school_name}"
+    """
+    
+    with engine.connect() as conn:
+        df = pd.read_sql(query, conn)
+    
+    df = pd.crosstab(df.University, 
+                     df.Education).sort_index(ascending=False)
+    
+    df = df.T.sort_values(by=school_name, ascending=False)
+    
+    if show:
+        display(df)
 
     return df.to_json(orient='columns')

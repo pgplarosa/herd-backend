@@ -20,3 +20,6 @@
 
 # version 1.1.1
 - updated datatype of year in research cost
+
+# version 2.0.0
+- updated methods from stacked bar to bar-table
