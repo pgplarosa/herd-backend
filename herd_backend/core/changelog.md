@@ -23,3 +23,6 @@
 
 # version 2.0.0
 - updated methods from stacked bar to bar-table
+
+# version 2.1.0
+- added abstract analysis and classification
