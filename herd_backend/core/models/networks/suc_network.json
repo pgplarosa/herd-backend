@@ -1,0 +1,1126 @@
+{
+  "ASSIST": {
+    "Profile": 3,
+    "Nodes": 265,
+    "Edges": 483,
+    "Average Degree": 3.6452830189,
+    "Maximum Degree": [
+      {
+        "name": "Vasquez, Reymond S.",
+        "value": 20
+      }
+    ],
+    "degree_distrib": "ASSIST_degree.png",
+    "network_plot": "ASSIST.png",
+    "GC Nodes": 193,
+    "GC Edges": 422,
+    "GC Average Degree": 4.3730569948,
+    "GC Maximum Degree": [
+      {
+        "name": "Vasquez, Reymond S.",
+        "value": 20
+      }
+    ],
+    "gc_degree_distrib": "ASSIST_gc_degree.png",
+    "gc_network_plot": "ASSIST_gc.png",
+    "Average Shortest Path": 5.7093048359,
+    "Clustering Coefficient": 0.6118968503,
+    "Top 3 Degree Centrality": [
+      {
+        "name": "Vasquez, Reymond S.",
+        "value": 0.1041666667
+      },
+      {
+        "name": "Gannapao, Jubert S.",
+        "value": 0.09375
+      },
+      {
+        "name": "Abalos, Michael Vene S.",
+        "value": 0.0833333333
+      }
+    ],
+    "Top 3 Betweenness Centrality": [
+      {
+        "name": "Gannapao, Jubert S.",
+        "value": 0.4351792986
+      },
+      {
+        "name": "Vasquez, Reymond S.",
+        "value": 0.4283486038
+      },
+      {
+        "name": "Atmosfera, Rynheart P.",
+        "value": 0.3646338455
+      }
+    ],
+    "Top 3 Closeness Centrality": [
+      {
+        "name": "Atmosfera, Rynheart P.",
+        "value": 0.2815249267
+      },
+      {
+        "name": "Gannapao, Jubert S.",
+        "value": 0.2782608696
+      },
+      {
+        "name": "Vasquez, Reymond S.",
+        "value": 0.2692847125
+      }
+    ],
+    "dc_plot": "ASSIST_dc.png",
+    "bc_plot": "ASSIST_bc.png",
+    "cc_plot": "ASSIST_cc.png",
+    "Modularity": 0.7836273893,
+    "Number of Communities": 12,
+    "Community List": {
+      "0": [
+        "Abalos, Michael Vene S.",
+        "Agdalpen, Mary Nizza",
+        "Are, Candylyn",
+        "Atmosfera, Rynheart P.",
+        "Barbero, Michelle I.",
+        "Batoon, Guitolio Jr.",
+        "Benoza, Candida Flora B.",
+        "Bolante, Dulce Corazon R.",
+        "Bose, Ma. Digna T.",
+        "Bose, Maria Digna",
+        "Bose, Maria Digna T.",
+        "Bose, Pablo B. Jr.",
+        "Cabael, Ruby Mae P.",
+        "Cabael, Ruby May P.",
+        "Dela Fuente, Bernie T.",
+        "Eloisan, Divinia B.",
+        "Elveña, Petronilo D.",
+        "Gandeza, Wilfredo M.",
+        "Gannapao, Jubert S.",
+        "Guillen",
+        "Guillen, John Paul A.",
+        "Guzman, Mary Joan T.",
+        "Insigne, Oliver Lance M.",
+        "John Paul A.",
+        "Lazo, Elizier B.",
+        "Meresen, Michael Marcelo M.",
+        "Omli, Rodney D.",
+        "Ortega, Rowena A.",
+        "Paderes, Nero M.",
+        "Paderes, Nero S.",
+        "Quileza, Rhea A.",
+        "Venus, Victoria G.",
+        "Villoria, Genelyn B.",
+        "Viste, Sammy"
+      ],
+      "1": [
+        "Baldemor, Romeo Jr.",
+        "Balingit, Kae Ann Marie",
+        "De La Cruz, Joey M.",
+        "Dela Cruz, Joey M.",
+        "Gannapao, Jubert",
+        "Guidang, Excel Philip",
+        "Guidang, Excel Philip B.",
+        "Landa, Christopher John R.",
+        "Laureta, Max",
+        "Llanda, Christopher John",
+        "Llanda, Christopher John R.",
+        "Talingdan, Janelyn A.",
+        "Trinidad, Joventino T.",
+        "Trinidad, Joventino T. Jr.",
+        "Truqueza, Maria",
+        "Tuzon, Amor A."
+      ],
+      "2": [
+        "Alzate, Michelle Melinda B.",
+        "Arconado, Patrick John L.",
+        "Atmosfera, Verena G.",
+        "Belisario, Lydiason O.",
+        "Cabael, Ruby May",
+        "Cortez, Emalyn T.",
+        "Dela Cruz, Andrian A.",
+        "Enriquez, Alexis",
+        "Enriquez, Alexis A.",
+        "Herida, Irene Claire",
+        "Herida, Irene Claire P.",
+        "Martinez, Ma. Christilyn A.",
+        "Pablo, Geneva N.",
+        "Paredes, Perfecto F.",
+        "Pasos, Leo T.",
+        "Pias, Ferdinand B.",
+        "Romero, John Mark B.",
+        "Sequerra, Minerva",
+        "Valera, Marian Loren B.",
+        "Vitalis, Charlie A."
+      ],
+      "3": [
+        "Alejandre, Leandro S.",
+        "Anicas, Margie V.",
+        "Atmosfera, Verena",
+        "Baay, Joraidy B.",
+        "Baay, Joraidyl B.",
+        "Barzuela, Mylene E.",
+        "Benas, Diomedes D.",
+        "Bersamira, Hazel T.",
+        "Bobila, Wilma Jlona B.",
+        "Buenafe, Mario",
+        "Castillo, Bernard B.",
+        "Dayag, Annaliza J.",
+        "Dickson, Ramarie F.",
+        "Fabito, Rovinson Q.",
+        "Fetalvero, Elizabeth C.",
+        "Licos, Artemio R. Jr.",
+        "Raranga, Dylan Edward",
+        "Raranga, Dylan Edward R.",
+        "Rarangga, Dylan Edward R.",
+        "Romero, John Mark",
+        "Vallesteros, Manuel V.",
+        "Vasquez, Joey M.",
+        "Vasquez, Reymond S.",
+        "Viloria, Genelyn B.",
+        "Yahin, Rommel J.",
+        "Zales, Jonathan B."
+      ],
+      "4": [
+        "Abalos, Michael Vene",
+        "Atmosfera, Rynheart",
+        "Bagioan, Elsa D.",
+        "Bagioan, Michaela Isabelle D.",
+        "Begnalen, Ramelda B.",
+        "Bersamira, Hazel",
+        "Bigornia, Michael Vincent",
+        "Bigornia, Michael Vincent B.",
+        "Paderes, Nero",
+        "Palcon, Gerardo",
+        "Quileza, Rhea",
+        "Turqueza, Peri Jayson",
+        "Velarde, Maria Anngelli L."
+      ],
+      "5": [
+        "Belisario, Lydiason",
+        "Casabar, Judith",
+        "Miguel, Maria Maribel",
+        "Pablo, Geneva",
+        "Pilarta, Mae Amalia",
+        "Valera, Calixto",
+        "Visco, Dionisio"
+      ],
+      "6": [
+        "Alagao, Andyjul A.",
+        "Casipit, Mark Francis F.",
+        "Flores, Ma. Rita V.",
+        "Rafanan, Antonio R.",
+        "Tejero, Rodelyn T.",
+        "Tordil, Franxes Ghia U.",
+        "Valdez, Donna Joy C."
+      ],
+      "7": [
+        "Alagao, Leila",
+        "Alcos, Ranier Mark",
+        "Buenafe, Cristina J.",
+        "Buenafe, Glenn G.",
+        "Buenafe, John Paul B.",
+        "Carbonilla, Eucensio B.",
+        "De Vera, Bernard",
+        "De Vera, Bernard A.",
+        "Labios, Guillermo Jr.",
+        "Labios, Guillermo P. Jr.",
+        "Lomboy, Orlando A.",
+        "Pacursa, Cristian Ivan",
+        "Pizarro, Eden",
+        "Pizarro, Maria Eden A.",
+        "Tamayo, Rodel",
+        "Tebia, Rex",
+        "Valera, Novelyn B.",
+        "Vasquez, Reymond",
+        "Zales, Jonathan P."
+      ],
+      "8": [
+        "Alingasa, Marvin",
+        "Altero, Rovinson",
+        "Baldemor, Romeo B.",
+        "Casabar, Judith V.",
+        "Lomboy, Orlando",
+        "Montejo, Jason",
+        "Montejo, Jason M.",
+        "Tauro, Aurelio",
+        "Viste, Armando"
+      ],
+      "9": [
+        "Agwayan, Drexel Jay F.",
+        "Alagao, Marilyn J.",
+        "Alagao, Prestine Joy",
+        "Bautista, Nilda A.",
+        "Bejarin, Ma. Lourdes Q.",
+        "Bose, Naceilli G.",
+        "Flores, Josefina A.",
+        "Flores, Ma Rita V.",
+        "Martinez, Juniel",
+        "Peralta, Marwin B.",
+        "Peralta, Violeta T.",
+        "Pilarta, Mae Amelia",
+        "Roldan, Roberto Jr.",
+        "Roldan, Roberto Q. Jr.",
+        "Talledo, Maria Rebecca",
+        "Talledo, Maria Rebecca B.",
+        "Villamor, Edel Christy D.",
+        "Viste, Sammy B."
+      ],
+      "10": [
+        "Abat, John Lord",
+        "Bides, Jestoni B.",
+        "Blanza, Analy",
+        "Bugtong, Jenesis C.",
+        "Gabay, Ahmed",
+        "Gonzalo, Gemma",
+        "Gonzalo, Gemma P.",
+        "Gozos, Zairohn Khaine",
+        "Reyes, Fastine May",
+        "Taclawan, Bersheeba L.",
+        "Tamayo, Mark Jensen",
+        "Timbreza, Lorrea Joyce",
+        "Torres, Romah",
+        "Trinidad, Joyce Anne B.",
+        "Tumalip, Marie Ann A.",
+        "Valencia, Jordan S."
+      ],
+      "11": [
+        "Bose, Alysa",
+        "Buanan, Herlyn B.",
+        "Maglaya, Medilyne B.",
+        "Marilag, Mary Rose",
+        "Patagao, Talugay G.",
+        "Pilarta, Mae Amalia B.",
+        "Pilor, May Lyn",
+        "Tamo, Christine"
+      ]
+    },
+    "community_plot": "ASSIST_communities.png"
+  },
+  "ASCAT": {
+    "Profile": 1,
+    "Nodes": 26,
+    "Edges": 30,
+    "Average Degree": 2.3076923077,
+    "Maximum Degree": [
+      {
+        "name": "Bongolan Jr., Rodrigo L.",
+        "value": 7
+      }
+    ],
+    "degree_distrib": "ASCAT_degree.png",
+    "network_plot": "ASCAT.png",
+    "GC Nodes": null,
+    "GC Edges": null,
+    "GC Average Degree": null,
+    "GC Maximum Degree": null,
+    "gc_degree_distrib": null,
+    "gc_network_plot": null,
+    "Average Shortest Path": null,
+    "Clustering Coefficient": null,
+    "Top 3 Degree Centrality": null,
+    "Top 3 Betweenness Centrality": null,
+    "Top 3 Closeness Centrality": null,
+    "dc_plot": null,
+    "bc_plot": null,
+    "cc_plot": null,
+    "Modularity": null,
+    "Number of Communities": null,
+    "Community List": null,
+    "community_plot": null
+  },
+  "BSU": {
+    "Profile": 3,
+    "Nodes": 437,
+    "Edges": 1259,
+    "Average Degree": 5.76201373,
+    "Maximum Degree": [
+      {
+        "name": "Tayaben, Jude L.",
+        "value": 38
+      }
+    ],
+    "degree_distrib": "BSU_degree.png",
+    "network_plot": "BSU.png",
+    "GC Nodes": 157,
+    "GC Edges": 469,
+    "GC Average Degree": 5.974522293,
+    "GC Maximum Degree": [
+      {
+        "name": "Lee, Young Jin",
+        "value": 24
+      }
+    ],
+    "gc_degree_distrib": "BSU_gc_degree.png",
+    "gc_network_plot": "BSU_gc.png",
+    "Average Shortest Path": 6.1810387065,
+    "Clustering Coefficient": 0.7888210688,
+    "Top 3 Degree Centrality": [
+      {
+        "name": "Lee, Young Jin",
+        "value": 0.1538461538
+      },
+      {
+        "name": "Doyog, Nova D.",
+        "value": 0.1474358974
+      },
+      {
+        "name": "Batani, Ruth S.",
+        "value": 0.1282051282
+      }
+    ],
+    "Top 3 Betweenness Centrality": [
+      {
+        "name": "Dolipas, Bretel B.",
+        "value": 0.5155638269
+      },
+      {
+        "name": "Abiasen, Jovalson T.",
+        "value": 0.5047422112
+      },
+      {
+        "name": "Gomez Jr., Romeo A.",
+        "value": 0.499751861
+      }
+    ],
+    "Top 3 Closeness Centrality": [
+      {
+        "name": "Dolipas, Bretel B.",
+        "value": 0.2287390029
+      },
+      {
+        "name": "Abiasen, Jovalson T.",
+        "value": 0.2264150943
+      },
+      {
+        "name": "Sajise, Marycel T.",
+        "value": 0.2247838617
+      }
+    ],
+    "dc_plot": "BSU_dc.png",
+    "bc_plot": "BSU_bc.png",
+    "cc_plot": "BSU_cc.png",
+    "Modularity": 0.80573829,
+    "Number of Communities": 9,
+    "Community List": {
+      "0": [
+        "Abadillos, Mg",
+        "Alfonso, Gerry P.",
+        "Baliton, Romnick S.",
+        "Bao-Idang, Conrado C.",
+        "Cabahug, Red",
+        "Cabahug, Rowena Esperanza D.",
+        "Carandang, Wilfredo M.",
+        "Castillo, Aka",
+        "Castillo, Arnold Karl A.",
+        "Castillo, Arturo Sa.",
+        "Cosico, Rsa",
+        "Landicho, Ld",
+        "Landicho, Leila D.",
+        "Laruan, Kenneth A.",
+        "Ocampo, Mtnp",
+        "Paelmo, Roselyn F.",
+        "Ramirez, Majp",
+        "Rodriguez, Ramil S.",
+        "Visco, Roberto G."
+      ],
+      "1": [
+        "Anacioco, Kamae P.",
+        "Baoanan, Zenaida G.",
+        "Bayer, Derek C.",
+        "Calora Jr., Feliciano G.",
+        "Chichioco, Dante S.",
+        "Daipan, Bernard Peter O.",
+        "Doyog, Nova D.",
+        "Franco, Jenner A.",
+        "Gamboa, Michelle D.",
+        "Gorio, Judy Ann L.",
+        "Jang, Mina",
+        "Joo, Sung-Hyun",
+        "Jung, Sung Cheol",
+        "Kang, Jin Taek",
+        "Kim, Sung Yong",
+        "Lee, Byungdoo",
+        "Lee, Kyeong Hak",
+        "Lee, Sun Joo",
+        "Lee, Sunjoo",
+        "Lee, Young Ji",
+        "Lee, Young Jin",
+        "Lee, Young Jin Lee",
+        "Lin, Chinsu",
+        "Lumbres, Roscinto Ian",
+        "Lumbres, Roscinto Ian C.",
+        "Padsico, Mary Relia S.",
+        "Pampolina, Nelson M.",
+        "Parian, Christine P.",
+        "Pyo, Ung Kee",
+        "Seo, Yeon Ok",
+        "Son, Yeong Mo"
+      ],
+      "2": [
+        "Altaki, Mary An J.",
+        "Batani, Ruth S.",
+        "Bañez, Alladin A.",
+        "Bedejim, Alima N.",
+        "Faroden, Joel C.",
+        "Fernandez-Docallas, Froidelyn",
+        "Galagal, Christita P.",
+        "Hudson, Gretchen Shagami M.",
+        "Labon, Kacy O.",
+        "Loncio, Rhea S.",
+        "Manao, Kristerlyne S.",
+        "Sa-Ao, Beverly C.",
+        "Tagarino, Darlyn D."
+      ],
+      "3": [
+        "Angeles, Yolanda B.",
+        "Ciolkosz, Daniel E.",
+        "Dulay, Alvin C.",
+        "Dumalhin, Leonardo D.",
+        "Galad, Marlon N.",
+        "Kimkiman, Nazer Sarapeo P.",
+        "Launio, Cheryll C.",
+        "Luis, Janet S.",
+        "Meana, Vanessa Rose L.",
+        "Onalan, Milagros B.",
+        "Pagnas, Keithlern M.",
+        "Smeets, Alex",
+        "Sotelo, Marycris",
+        "Suclad, Roger Lee M.",
+        "Sudaypan Sr., Constantino T.",
+        "Valentin, Marvin T."
+      ],
+      "4": [
+        "Besic, Elvira",
+        "Bueno, Crisanta",
+        "Clerget Benoît, Egle Rohilyn B.",
+        "Garcia, Jose Nestor M.",
+        "Gaya, Sayrha Fe A.",
+        "Layaoen, Heathel",
+        "Ligat, Bonie S.",
+        "Loren Dionora J.",
+        "Matso, Nover M.",
+        "Medina, Simplicio M.",
+        "Pablo, Janet P.",
+        "Pagadan, Casiano S.",
+        "Parao, Marissa R.",
+        "Sta Cruz Pompe C.",
+        "Sunio, Domingo Abigail J.",
+        "Tanguid, Leon B.",
+        "Untalan, Paquito P.",
+        "Wagan, Amparo M.",
+        "Yabes, Melbrenne"
+      ],
+      "5": [
+        "Antonio, Jhunedyn M.",
+        "Bacate, Margarette M.",
+        "Bestre, Erlinda",
+        "Bestre, Erlinda C.",
+        "Buot Jr., Inocencio E.",
+        "Butag, Jackson L.",
+        "Cervantes, Starleene S.",
+        "Guron, Maricel A.",
+        "Ladoan, Sheinalene M.",
+        "Lit Jr., Ireneo L.",
+        "Lumiquio, Arsenia M.",
+        "Lumpio, Rey G.",
+        "Napadlet, Jones T.",
+        "Sotto, Rachel C.",
+        "Vicente, Gina D.",
+        "Zafaralla, Macrina T."
+      ],
+      "6": [
+        "Alawas, Dolores E.",
+        "Aliping, Joanne B.",
+        "Alvaro, Manolita N.",
+        "Balagtey, Janet Lynn M.",
+        "Bansiong, Apler J.",
+        "Belleza, Jorenz A",
+        "Bokilis, Almon B.",
+        "Botengan, Desiree F.",
+        "Cuevas, Jingle P.",
+        "Dolendo, Russell B.",
+        "Feliciano, Esper L.",
+        "Gallardo, Alma Vida G.",
+        "Kudan, Rosita B.",
+        "Lascano, Elizabeth A",
+        "Lascano, Elizabeth A.",
+        "Lubrica, Percyveranda A.",
+        "Manas, Froilan B.",
+        "Parcasio, Imelda G."
+      ],
+      "7": [
+        "Abiasen, Jovalson T.",
+        "Alimondo, Monica S.",
+        "Buasen, Julie A.",
+        "Dolipas, Bretel B.",
+        "Dolipas,Bretel B.",
+        "Fulwani, Danni Loven",
+        "Lubrica, Joel V.",
+        "Lubrica, Maria Azucena B.",
+        "Madinno, Carmelo",
+        "Ocampo, Phil S.",
+        "Pakipac, Kenneth B.",
+        "Ramos , Jennifer Lyn S.",
+        "Ramos, Jennifer Lyn",
+        "Ramos, Jennifer Lyn S.",
+        "Sajise, Marycel T.",
+        "Samuel, Freda Kate D.",
+        "Valentin, Precious M.",
+        "Wadasen, Russel Fits P."
+      ],
+      "8": [
+        "Anacin, Carljhonson",
+        "Anacio, Danesto B.",
+        "Fomeg-As, David Y.",
+        "Gomez Jr., Romeo A.",
+        "Lasangen, Wileen Chiara T.",
+        "Paing, Joyce N.",
+        "Reyes, Gaudelia A."
+      ]
+    },
+    "community_plot": "BSU_communities.png"
+  },
+  "BulSU": {
+    "Profile": 1,
+    "Nodes": 251,
+    "Edges": 321,
+    "Average Degree": 2.5577689243,
+    "Maximum Degree": [
+      {
+        "name": "Vigonte, Florinda G.",
+        "value": 14
+      }
+    ],
+    "degree_distrib": "BulSU_degree.png",
+    "network_plot": "BulSU.png",
+    "GC Nodes": null,
+    "GC Edges": null,
+    "GC Average Degree": null,
+    "GC Maximum Degree": null,
+    "gc_degree_distrib": null,
+    "gc_network_plot": null,
+    "Average Shortest Path": null,
+    "Clustering Coefficient": null,
+    "Top 3 Degree Centrality": null,
+    "Top 3 Betweenness Centrality": null,
+    "Top 3 Closeness Centrality": null,
+    "dc_plot": null,
+    "bc_plot": null,
+    "cc_plot": null,
+    "Modularity": null,
+    "Number of Communities": null,
+    "Community List": null,
+    "community_plot": null
+  },
+  "DNSC": {
+    "Profile": 3,
+    "Nodes": 100,
+    "Edges": 208,
+    "Average Degree": 4.16,
+    "Maximum Degree": [
+      {
+        "name": "Decano, Ronald S.",
+        "value": 20
+      }
+    ],
+    "degree_distrib": "DNSC_degree.png",
+    "network_plot": "DNSC.png",
+    "GC Nodes": 83,
+    "GC Edges": 196,
+    "GC Average Degree": 4.7228915663,
+    "GC Maximum Degree": [
+      {
+        "name": "Decano, Ronald S.",
+        "value": 20
+      }
+    ],
+    "gc_degree_distrib": "DNSC_gc_degree.png",
+    "gc_network_plot": "DNSC_gc.png",
+    "Average Shortest Path": 4.094622392,
+    "Clustering Coefficient": 0.7302264423,
+    "Top 3 Degree Centrality": [
+      {
+        "name": "Decano, Ronald S.",
+        "value": 0.243902439
+      },
+      {
+        "name": "Gumanao, Girley S.",
+        "value": 0.1341463415
+      },
+      {
+        "name": "Santamaria, Josiedel",
+        "value": 0.1341463415
+      }
+    ],
+    "Top 3 Betweenness Centrality": [
+      {
+        "name": "Decano, Ronald S.",
+        "value": 0.4214302443
+      },
+      {
+        "name": "Rodriguez, Bernandita T.",
+        "value": 0.3251243888
+      },
+      {
+        "name": "Padios, Ian Jay T.",
+        "value": 0.2222975008
+      }
+    ],
+    "Top 3 Closeness Centrality": [
+      {
+        "name": "Decano, Ronald S.",
+        "value": 0.3744292237
+      },
+      {
+        "name": "Padios, Ian Jay T.",
+        "value": 0.3430962343
+      },
+      {
+        "name": "Duran, John Rae V.",
+        "value": 0.3374485597
+      }
+    ],
+    "dc_plot": "DNSC_dc.png",
+    "bc_plot": "DNSC_bc.png",
+    "cc_plot": "DNSC_cc.png",
+    "Modularity": 0.6968710954,
+    "Number of Communities": 9,
+    "Community List": {
+      "0": [
+        "Bernaldez, Edison",
+        "Cantere, Bonita",
+        "Fermil, Florie Ann L.",
+        "Lanoy, Junry",
+        "Law-Ay, Sadie D.",
+        "Santamaria, Josiedel"
+      ],
+      "1": [
+        "Borlio, Jevannel G.",
+        "Cereno, Ann Cherry",
+        "Decano, Ronald S.",
+        "Duping, Arnold M.",
+        "Funa, Maricielo Paula",
+        "Hasan, Sabar G.",
+        "Junsay, Marilou D.",
+        "Labor, Ma. Bonjeavem",
+        "Lagura, Glenne B.",
+        "Libre, Jo Mark M.",
+        "Rubi, Armin L.",
+        "Santos, Edgardo M."
+      ],
+      "2": [
+        "Bos, Arthur R.",
+        "Cardona, Lemuel T.",
+        "Gumanao, Girley S.",
+        "Hoang, Anh Thai",
+        "Lopez, Xavier N.",
+        "Nguyen, Minh Phuong",
+        "Randall, Jack E.",
+        "Tran, Thu Trang",
+        "Vo, Dieu Linh"
+      ],
+      "3": [
+        "Besas, Jesebel R.",
+        "Esprela, Liezel T.",
+        "Micabani, Neal Reggie",
+        "Relox, Paquito E.",
+        "Rodriguez, Bernandita T.",
+        "Rodriguez, T.",
+        "Ruelo, Felma E.",
+        "Sotomil, Sol D.",
+        "Tabinas, Ria Jayne A.",
+        "Torrejos, Sevetrim B."
+      ],
+      "4": [
+        "Agod, Joena Marie M.",
+        "Albite, Carlo Jay",
+        "Alfeche, Aivie V.",
+        "Benigno, Kenny Allan P.",
+        "Diez, Maria Alyana A.",
+        "Gallano, Gerry Louis O.",
+        "Monreal, Mecah Ellah"
+      ],
+      "5": [
+        "Buladaco, Jumar S.",
+        "Buladaco, Mark Van M.",
+        "Cantero, Laarni M.",
+        "Cutad, Reir Erlinda",
+        "Dabalos, Jonilyn T.",
+        "Delos Reyes, Ian Val P.",
+        "Denila, Pamila Grace",
+        "Gamao, Ariel O.",
+        "Gameng, A.",
+        "Gameng, Hazel A.",
+        "Masagnkay, Rogelio A.",
+        "Padios, Ian Jay T.",
+        "Pelone, Boyeth C.",
+        "Tejada, Jonilyn A."
+      ],
+      "6": [
+        "Alipoyo, Joan Cristin E.",
+        "Bero, Quirino M.",
+        "Edullantes, Christine Mae A.",
+        "Guanzon, Grace C.",
+        "Gumaano, Girley S.",
+        "Sotomil, Joey P.",
+        "Tejada, Rosie Lynn P."
+      ],
+      "7": [
+        "Andam, Michael B.",
+        "Delima, Shamae Ria R.",
+        "Manuales, Zoilyn B.",
+        "Mondigo, Lord Martino S.",
+        "Ranara, Cyril Tom B.",
+        "Robles, Lhoenyl B.",
+        "Saligan, Rosario",
+        "Saligan, Rosario B.",
+        "Turno, Rey B."
+      ],
+      "8": [
+        "Centina, Jean D.",
+        "Cereno, Ann Cherry C.",
+        "Dalumay, Melissa E.",
+        "Duran, John Rae V.",
+        "Lagare, Nickel Jean S.",
+        "Lumaday, Evelyn J.",
+        "Manseguiao, Mark Ronalds S.",
+        "Patarata, Ma. Kristine A.",
+        "Somosot, Ian S."
+      ]
+    },
+    "community_plot": "DNSC_communities.png"
+  },
+  "MinSU": {
+    "Profile": 2,
+    "Nodes": 109,
+    "Edges": 199,
+    "Average Degree": 3.6513761468,
+    "Maximum Degree": [
+      {
+        "name": "Yumo, Elsie",
+        "value": 10
+      }
+    ],
+    "degree_distrib": "MinSU_degree.png",
+    "network_plot": "MinSU.png",
+    "GC Nodes": 15,
+    "GC Edges": 26,
+    "GC Average Degree": 3.4666666667,
+    "GC Maximum Degree": [
+      {
+        "name": "Agutaya, Christian Anthony C.",
+        "value": 9
+      }
+    ],
+    "gc_degree_distrib": "MinSU_gc_degree.png",
+    "gc_network_plot": "MinSU_gc.png",
+    "Average Shortest Path": 2.0380952381,
+    "Clustering Coefficient": 0.536031746,
+    "Top 3 Degree Centrality": [
+      {
+        "name": "Agutaya, Christian Anthony C.",
+        "value": 0.6428571429
+      },
+      {
+        "name": "Cabaral, Nora C.",
+        "value": 0.5714285714
+      },
+      {
+        "name": "Liwanag, Emma Vida R.",
+        "value": 0.4285714286
+      }
+    ],
+    "Top 3 Betweenness Centrality": [
+      {
+        "name": "Cabaral, Nora C.",
+        "value": 0.6043956044
+      },
+      {
+        "name": "Agutaya, Christian Anthony C.",
+        "value": 0.5604395604
+      },
+      {
+        "name": "Liwanag, Emma Vida R.",
+        "value": 0.032967033
+      }
+    ],
+    "Top 3 Closeness Centrality": [
+      {
+        "name": "Agutaya, Christian Anthony C.",
+        "value": 0.7368421053
+      },
+      {
+        "name": "Cabaral, Nora C.",
+        "value": 0.7
+      },
+      {
+        "name": "Zamora, Jesse T.",
+        "value": 0.56
+      }
+    ],
+    "dc_plot": "MinSU_dc.png",
+    "bc_plot": "MinSU_bc.png",
+    "cc_plot": "MinSU_cc.png",
+    "Modularity": null,
+    "Number of Communities": null,
+    "Community List": null,
+    "community_plot": null
+  },
+  "PSU": {
+    "Profile": 2,
+    "Nodes": 272,
+    "Edges": 686,
+    "Average Degree": 5.0441176471,
+    "Maximum Degree": [
+      {
+        "name": "Mangussad, Vernaluz C.",
+        "value": 34
+      }
+    ],
+    "degree_distrib": "PSU_degree.png",
+    "network_plot": "PSU.png",
+    "GC Nodes": 68,
+    "GC Edges": 299,
+    "GC Average Degree": 8.7941176471,
+    "GC Maximum Degree": [
+      {
+        "name": "Mangussad, Vernaluz C.",
+        "value": 34
+      }
+    ],
+    "gc_degree_distrib": "PSU_gc_degree.png",
+    "gc_network_plot": "PSU_gc.png",
+    "Average Shortest Path": 2.4784899034,
+    "Clustering Coefficient": 0.9072712641,
+    "Top 3 Degree Centrality": [
+      {
+        "name": "Mangussad, Vernaluz C.",
+        "value": 0.5074626866
+      },
+      {
+        "name": "Imelda R. Lactuan",
+        "value": 0.4029850746
+      },
+      {
+        "name": "Caabay, Bemsor T.",
+        "value": 0.328358209
+      }
+    ],
+    "Top 3 Betweenness Centrality": [
+      {
+        "name": "Mangussad, Vernaluz C.",
+        "value": 0.4800406664
+      },
+      {
+        "name": "Imelda R. Lactuan",
+        "value": 0.229405315
+      },
+      {
+        "name": "Venturillo, Mikee",
+        "value": 0.1655359566
+      }
+    ],
+    "Top 3 Closeness Centrality": [
+      {
+        "name": "Mangussad, Vernaluz C.",
+        "value": 0.6568627451
+      },
+      {
+        "name": "Imelda R. Lactuan",
+        "value": 0.5726495726
+      },
+      {
+        "name": "Caabay, Bemsor T.",
+        "value": 0.5583333333
+      }
+    ],
+    "dc_plot": "PSU_dc.png",
+    "bc_plot": "PSU_bc.png",
+    "cc_plot": "PSU_cc.png",
+    "Modularity": null,
+    "Number of Communities": null,
+    "Community List": null,
+    "community_plot": null
+  },
+  "TSU": {
+    "Profile": 1,
+    "Nodes": 17,
+    "Edges": 11,
+    "Average Degree": 1.2941176471,
+    "Maximum Degree": [
+      {
+        "name": "Pomicpic, Janronel",
+        "value": 3
+      }
+    ],
+    "degree_distrib": "TSU_degree.png",
+    "network_plot": "TSU.png",
+    "GC Nodes": null,
+    "GC Edges": null,
+    "GC Average Degree": null,
+    "GC Maximum Degree": null,
+    "gc_degree_distrib": null,
+    "gc_network_plot": null,
+    "Average Shortest Path": null,
+    "Clustering Coefficient": null,
+    "Top 3 Degree Centrality": null,
+    "Top 3 Betweenness Centrality": null,
+    "Top 3 Closeness Centrality": null,
+    "dc_plot": null,
+    "bc_plot": null,
+    "cc_plot": null,
+    "Modularity": null,
+    "Number of Communities": null,
+    "Community List": null,
+    "community_plot": null
+  },
+  "UPB": {
+    "Profile": 2,
+    "Nodes": 261,
+    "Edges": 975,
+    "Average Degree": 7.4712643678,
+    "Maximum Degree": [
+      {
+        "name": "Yeboah, Alfred A. Oteng",
+        "value": 28
+      }
+    ],
+    "degree_distrib": "UPB_degree.png",
+    "network_plot": "UPB.png",
+    "GC Nodes": 32,
+    "GC Edges": 122,
+    "GC Average Degree": 7.625,
+    "GC Maximum Degree": [
+      {
+        "name": "Agulo, Ian Jasper A.",
+        "value": 25
+      }
+    ],
+    "gc_degree_distrib": "UPB_gc_degree.png",
+    "gc_network_plot": "UPB_gc.png",
+    "Average Shortest Path": 1.9798387097,
+    "Clustering Coefficient": 0.9397303044,
+    "Top 3 Degree Centrality": [
+      {
+        "name": "Agulo, Ian Jasper A.",
+        "value": 0.8064516129
+      },
+      {
+        "name": "Saito, Takeshi",
+        "value": 0.4516129032
+      },
+      {
+        "name": "Pascua, Chelo S.",
+        "value": 0.3870967742
+      }
+    ],
+    "Top 3 Betweenness Centrality": [
+      {
+        "name": "Agulo, Ian Jasper A.",
+        "value": 0.6784946237
+      },
+      {
+        "name": "Pascua, Chelo S.",
+        "value": 0.2795698925
+      },
+      {
+        "name": "Saito, Takeshi",
+        "value": 0.0532258065
+      }
+    ],
+    "Top 3 Closeness Centrality": [
+      {
+        "name": "Agulo, Ian Jasper A.",
+        "value": 0.8378378378
+      },
+      {
+        "name": "Pascua, Chelo S.",
+        "value": 0.6078431373
+      },
+      {
+        "name": "Saito, Takeshi",
+        "value": 0.5849056604
+      }
+    ],
+    "dc_plot": "UPB_dc.png",
+    "bc_plot": "UPB_bc.png",
+    "cc_plot": "UPB_cc.png",
+    "Modularity": null,
+    "Number of Communities": null,
+    "Community List": null,
+    "community_plot": null
+  },
+  "RSU": {
+    "Profile": 2,
+    "Nodes": 201,
+    "Edges": 404,
+    "Average Degree": 4.0199004975,
+    "Maximum Degree": [
+      {
+        "name": "Sa, Tongmin",
+        "value": 15
+      }
+    ],
+    "degree_distrib": "RSU_degree.png",
+    "network_plot": "RSU.png",
+    "GC Nodes": 16,
+    "GC Edges": 52,
+    "GC Average Degree": 6.5,
+    "GC Maximum Degree": [
+      {
+        "name": "Sa, Tongmin",
+        "value": 15
+      }
+    ],
+    "gc_degree_distrib": "RSU_gc_degree.png",
+    "gc_network_plot": "RSU_gc.png",
+    "Average Shortest Path": 1.5666666667,
+    "Clustering Coefficient": 0.8421436203,
+    "Top 3 Degree Centrality": [
+      {
+        "name": "Sa, Tongmin",
+        "value": 1
+      },
+      {
+        "name": "Walitang, Denver I.",
+        "value": 0.8666666667
+      },
+      {
+        "name": "Choi, Jeongyun",
+        "value": 0.6
+      }
+    ],
+    "Top 3 Betweenness Centrality": [
+      {
+        "name": "Sa, Tongmin",
+        "value": 0.3428571429
+      },
+      {
+        "name": "Walitang, Denver I.",
+        "value": 0.1952380952
+      },
+      {
+        "name": "Choi, Jeongyun",
+        "value": 0.0523809524
+      }
+    ],
+    "Top 3 Closeness Centrality": [
+      {
+        "name": "Sa, Tongmin",
+        "value": 1
+      },
+      {
+        "name": "Walitang, Denver I.",
+        "value": 0.8823529412
+      },
+      {
+        "name": "Choi, Jeongyun",
+        "value": 0.7142857143
+      }
+    ],
+    "dc_plot": "RSU_dc.png",
+    "bc_plot": "RSU_bc.png",
+    "cc_plot": "RSU_cc.png",
+    "Modularity": null,
+    "Number of Communities": null,
+    "Community List": null,
+    "community_plot": null
+  }
+}

@@ -16,3 +16,5 @@
 *.pkl
 
 *.pickle
+
+*herd_backend/static*

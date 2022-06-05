@@ -5,7 +5,7 @@ from core.faculty import get_faculty_profile_table as faculty_profile
 from core.faculty import get_faculty_educ_attain, get_faculty_educ_attain_break
 
 from core.utilities import makeJsonResponse, get_columns, invert_table, \
-        create_stacked_bar_chart_data
+        create_stacked_bar_chart_data, SUC_NETWORK_PATH
 
 from . consts import QUERY_PARAM_SCHOOL_NAME
 
@@ -28,3 +28,14 @@ def get_faculty_education_breakdown(request):
         return JsonResponse(json.loads(get_faculty_educ_attain_break(school_name)), safe=False)
     
     return HttpResponse(status=404)
+
+######################################
+#      CO-AUTHORSHIP                 #
+######################################
+
+def get_suc_network(request):
+    suc_network_data = {}
+    with open(SUC_NETWORK_PATH, 'r') as suc_network:
+        suc_network_data = json.load(suc_network)
+    
+    return JsonResponse(suc_network_data, safe=False)

@@ -10,7 +10,10 @@ HERD backend is scaffolded with a locally-run Django application.
 1. Create a virtual environment named `environment`.
 1. Activate the virtual environment.
 1. Install all the required packages in the `requirements.txt`.
-1. Copy the models to `herd_backend\herd_backend\models`.
+1. Copy the models to `herd_backend\models`.
+1. Copy image results to `herd_backend\models\core\images`.
+1. Copy the necessary JSON files to `herd_backend\models\networks`.
+1. Run the command: `python manage.py collectstatic`. Confirm all copies.
 
 You are then set to start the server.
 
