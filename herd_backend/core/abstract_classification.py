@@ -1,6 +1,10 @@
 import pickle
 import json
 
+from . utilities import MODELS_PATH
+
+import os
+
 def abstract_classification(abstract_text):
     """ Predict the school, topic, sdg, keywords given abstract
     
@@ -43,31 +47,31 @@ def abstract_classification(abstract_text):
     }
     
     # embeddings
-    with open('models/specter.pickle', 'rb') as f:
+    with open(os.path.join(MODELS_PATH, 'specter.pickle'), 'rb') as f:
         encoder = pickle.load(f)
 
     # classifier (school)
-    with open('models/research_spec.pickle', 'rb') as f:
+    with open(os.path.join(MODELS_PATH, 'research_spec.pickle'), 'rb') as f:
         research_spec = pickle.load(f)   
         
     # tfid vectorizer (keyphrase generation)
-    with open('models/tfidf_vectorizer_keyphrase.pkl', 'rb') as f:
+    with open(os.path.join(MODELS_PATH, 'tfidf_vectorizer_keyphrase.pkl'), 'rb') as f:
         tfidf_vect = pickle.load(f)    
 
     # classifier (sdg)
-    with open('models/sdg_lr.pkl', 'rb') as f:
+    with open(os.path.join(MODELS_PATH, 'sdg_lr.pkl'), 'rb') as f:
         sdg_lr = pickle.load(f)  
     
     # classifier (school)
-    with open('models/topics.pickle', 'rb') as f:
+    with open(os.path.join(MODELS_PATH, 'topics.pickle'), 'rb') as f:
         topics = pickle.load(f)   
         
     # keybert (keyphrase generation)
-    with open('models/kw_model_keyphrase.pkl', 'rb') as f:
+    with open(os.path.join(MODELS_PATH, 'kw_model_keyphrase.pkl'), 'rb') as f:
         keybert = pickle.load(f)
     
     # tfid vectorizer (keyphrase generation)
-    with open('models/tfidf_vectorizer_keyphrase.pkl', 'rb') as f:
+    with open(os.path.join(MODELS_PATH, 'tfidf_vectorizer_keyphrase.pkl'), 'rb') as f:
         tfidf_vect = pickle.load(f)      
         
     # uncased since encoder is pretrained uncased

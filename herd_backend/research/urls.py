@@ -10,5 +10,6 @@ urlpatterns = [
     path('patents/type-per-univ', views.get_patent_type_per_university, name='patent_type_per_university'),
     path('patents/per-type', views.get_patents_per_type, name="patents_per_type"),
     path('patents/per-status', views.get_patents_per_status, name="patents_per_status"),
-    path('patents/forecast', views.get_patents_forecast, name="patents_forecast")
+    path('patents/forecast', views.get_patents_forecast, name="patents_forecast"),
+    path('abstract/classification', views.get_abstract_classification, name="abstract_classification")
 ]

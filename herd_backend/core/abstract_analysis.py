@@ -1,6 +1,9 @@
 import json
 import numpy as np
 import pandas as pd
+import os
+
+from .utilities import CLEANED_DATA_PATH
 
 def get_abstract_analysis_table(show=False):
     """ outputs a table with columns: Title, Author, Keywords, Abstract, Year, 
@@ -16,11 +19,11 @@ def get_abstract_analysis_table(show=False):
     get_abstract_analysis_table    :   str
                                        json string
     """
-    df = pd.read_excel('../data/cleaned/research_profile_updated.xlsx')
+    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
     df['Topic Name'] = df['Topic Name'].str.title()
     df = df[['Research Title', 'Author', 'Keywords', 'Abstract', 'Year (YYYY)',
                 'University (Full Name)', 'Region', 'SDG', 'Topic Name']]
-    df['Keywords'] = pd.read_csv('../data/cleaned/keywords.csv')
+    df['Keywords'] = pd.read_csv(os.path.join(CLEANED_DATA_PATH, 'keywords.csv'))
     df.columns = ['Title', 'Author', 'Keywords', 'Abstract', 'Year', 'University',
                   'Region', 'SDG', 'Topic']
     df['Topic'] = df['Topic'].replace('Outliers', np.nan)
@@ -29,7 +32,7 @@ def get_abstract_analysis_table(show=False):
         display(df)
     return df.to_json(orient='columns')
 
-aa_table = get_abstract_analysis_table(show=True)
+# aa_table = get_abstract_analysis_table(show=True)
 
 def get_research_by_suc(show=False):
     """ counts the topics per SUC
@@ -44,7 +47,7 @@ def get_research_by_suc(show=False):
     get_research_by_suc    :   str
                                json string
     """
-    df = pd.read_excel('../data/cleaned/research_profile_updated.xlsx')
+    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
     df['Topic Name'] = df['Topic Name'].str.title()
     temp = sorted(df['University (Abbreviation)'].value_counts().drop('PSU').head(9).index)
     temp1 = df[['Topic Name']].value_counts().reset_index()['Topic Name'].values
@@ -73,7 +76,7 @@ def get_research_by_suc(show=False):
     get_research_by_suc    :   str
                                json string
     """
-    df = pd.read_excel('../data/cleaned/research_profile_updated.xlsx')
+    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
     df['Topic Name'] = df['Topic Name'].str.title()
     temp = sorted(df['University (Abbreviation)'].value_counts().drop('PSU').head(9).index)
     temp1 = df[['Topic Name']].value_counts().reset_index()['Topic Name'].values
@@ -102,7 +105,7 @@ def get_top_10_topics(show=False):
     get_top_10_topics    :   str
                              json string
     """
-    df = pd.read_excel('../data/cleaned/research_profile_updated.xlsx')
+    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
     df['Topic Name'] = df['Topic Name'].str.title()
     df = df['Topic Name'].value_counts(ascending=True).drop('Outliers').to_frame()
 
@@ -133,7 +136,7 @@ def get_research_by_sdg(show=False):
             14: 'Life Below Water', 15: 'Life on Land',
             16: 'Peace, Justice, and Strong Institutions',
             17: 'Partnerships for the Goals'}
-    df = pd.read_excel('../data/cleaned/research_profile_updated.xlsx')
+    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
     df['Topic Name'] = df['Topic Name'].str.title()
     temp1 = (df[['Topic Name']].value_counts()
              .drop(['Covid-19 Pandemic', 'Outliers'])
@@ -166,7 +169,7 @@ def get_research_by_region(show=False):
     get_research_by_region    :   str
                                json string
     """
-    df = pd.read_excel('../data/cleaned/research_profile_updated.xlsx')
+    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
     df['Topic Name'] = df['Topic Name'].str.title()
     temp = ['CAR', '3', '4B', '11', '13']
     temp1 = df[['Topic Name']].value_counts().reset_index()['Topic Name'].values

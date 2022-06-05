@@ -10,9 +10,14 @@ from core.patent import get_patent_type_univ as patent_type_per_university
 from core.patent import get_patent_type as patents_per_type
 from core.patent import get_patent_status as patents_per_status
 from core.patent import get_patent_yearly as patents_forecast
+from core.abstract_classification import abstract_classification
+from core.abstract_analysis import get_research_by_sdg, get_research_by_region
 
 from core.utilities import process_for_response, get_columns, convert_to_json, invert_table, create_stacked_bar_chart_data
+from django.views.decorators.csrf import csrf_exempt
 
+
+import json
 
 def get_research_relevance_table(request):
     return JsonResponse(invert_table(research_relevance_table()), safe=False)
@@ -37,3 +42,16 @@ def get_patents_per_status(request):
 
 def get_patents_forecast(request):
     return JsonResponse(convert_to_json(patents_forecast()), safe=False)
+
+@csrf_exempt
+def get_abstract_classification(request):
+    abstract = json.loads(request.body).get('abstract')
+    classification = abstract_classification(abstract)
+
+    return JsonResponse(json.loads(classification), safe=False)
+
+def get_abstract_research_by_sdg(request):
+    return JsonResponse(create_stacked_bar_chart_data(get_research_by_sdg()), safe=False)
+
+def get_abstract_research_by_region(request):
+    return JsonResponse(create_stacked_bar_chart_data(get_research_by_region(), safe=False))

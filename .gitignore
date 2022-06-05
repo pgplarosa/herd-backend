@@ -9,3 +9,10 @@
 #  IDEs
 
 *.idea*
+
+# models
+*/models*
+
+*.pkl
+
+*.pickle
