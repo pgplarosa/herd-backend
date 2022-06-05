@@ -11,7 +11,8 @@ from core.patent import get_patent_type as patents_per_type
 from core.patent import get_patent_status as patents_per_status
 from core.patent import get_patent_yearly as patents_forecast
 from core.abstract_classification import abstract_classification
-from core.abstract_analysis import get_research_by_sdg, get_research_by_region
+from core.abstract_analysis import get_research_by_sdg, get_research_by_region, get_abstract_analysis_table, \
+                                    get_research_by_suc, get_top_10_topics
 
 from core.utilities import process_for_response, get_columns, convert_to_json, invert_table, create_stacked_bar_chart_data
 from django.views.decorators.csrf import csrf_exempt
@@ -54,4 +55,13 @@ def get_abstract_research_by_sdg(request):
     return JsonResponse(create_stacked_bar_chart_data(get_research_by_sdg()), safe=False)
 
 def get_abstract_research_by_region(request):
-    return JsonResponse(create_stacked_bar_chart_data(get_research_by_region(), safe=False))
+    return JsonResponse(create_stacked_bar_chart_data(get_research_by_region()), safe=False)
+
+def get_table_abstract_analysis(request):
+    return JsonResponse(invert_table(get_abstract_analysis_table()), safe=False)
+
+def get_data_research_by_suc(request):
+    return JsonResponse(create_stacked_bar_chart_data(get_research_by_suc()), safe=False)
+
+def get_data_top_10_topics(request):
+    return JsonResponse(convert_to_json(get_top_10_topics()), safe=False)

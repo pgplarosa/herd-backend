@@ -63,34 +63,6 @@ def get_research_by_suc(show=False):
         display(df)
     return df.to_json(orient='columns')
 
-def get_research_by_suc(show=False):
-    """ counts the topics per SUC
-    
-    Parameters
-    ===========
-    show         :      bool
-                        print table if set to true
-                        
-    Returns
-    ===========
-    get_research_by_suc    :   str
-                               json string
-    """
-    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
-    df['Topic Name'] = df['Topic Name'].str.title()
-    temp = sorted(df['University (Abbreviation)'].value_counts().drop('PSU').head(9).index)
-    temp1 = df[['Topic Name']].value_counts().reset_index()['Topic Name'].values
-    df = (df[['University (Abbreviation)', 'Topic Name']]
-                       .groupby(['University (Abbreviation)', 'Topic Name']).size()
-                       .to_frame().reset_index())
-    df.columns = ['University', 'topics', 'count']
-    df = df.pivot(index='University', columns='topics', values='count').fillna(0)
-    df = df.loc[temp, temp1].drop('Outliers', axis=1)
-    df.index.rename('University', inplace=True)
-
-    if show:
-        display(df)
-    return df.to_json(orient='columns')
 
 def get_top_10_topics(show=False):
     """ returns top 10 topics per SUC
