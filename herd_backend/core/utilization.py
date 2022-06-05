@@ -3,8 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
+from .utilities import DB_PATH, DB_PATH_TEST
 
-def get_utilization_table(db_path='../data/db.sqlite3',
+# Set db path based on environment.
+DB = DB_PATH # or DB_PATH_TEST
+
+def get_utilization_table(db_path=DB,
                           show=False):
     """ outputs a table with columns: patent_filed, patent_type, status, 
         date_register, author, school
@@ -39,7 +43,7 @@ def get_utilization_table(db_path='../data/db.sqlite3',
 
     return df
     
-def get_utilization_product_univ(db_path='../data/db.sqlite3',
+def get_utilization_product_univ(db_path=DB,
                     plot=False):
     """ count the number of product/service type per university
     
@@ -77,7 +81,7 @@ def get_utilization_product_univ(db_path='../data/db.sqlite3',
     return df.to_json(orient='columns')
 
 def get_utilization_product_univ_break(school_name,
-                                 db_path='../data/db.sqlite3',
+                                 db_path=DB,
                                  show=False):
     """ count the number of product/service type for a university
     
@@ -116,7 +120,7 @@ def get_utilization_product_univ_break(school_name,
         
     return df.to_json(orient='columns')
 
-def get_utilization_topics(db_path='../data/db.sqlite3',
+def get_utilization_topics(db_path=DB,
                            top=10,
                            plot=False):
     """ get the top n utilization topics
@@ -150,7 +154,7 @@ def get_utilization_topics(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_utilization_beneficiaries(db_path='../data/db.sqlite3',
+def get_utilization_beneficiaries(db_path=DB,
                                   top=10,
                                   plot=False):
     """ get the top n beneficiaries
@@ -184,7 +188,7 @@ def get_utilization_beneficiaries(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_utilization_yearly(db_path='../data/db.sqlite3',
+def get_utilization_yearly(db_path=DB,
                            plot=False):
     """ get the yearly utilization count
     
@@ -216,4 +220,4 @@ def get_utilization_yearly(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-utilization_yearly = get_utilization_yearly(plot=True)
+# utilization_yearly = get_utilization_yearly(plot=True)

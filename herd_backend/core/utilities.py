@@ -1,5 +1,6 @@
 import json
 from django.http import JsonResponse
+import os
 
 
 def process_for_response(raw_data, metadata=None):
@@ -75,3 +76,9 @@ def create_stacked_bar_chart_data(data, is_string=True):
         stacked_bar_data.append(new_data)
     
     return stacked_bar_data
+
+# DB PATH FOR DEPLOYMENT
+DB_PATH = os.path.abspath('../herd_backend/data/db.sqlite3')
+
+# DB PATH FOR TESTING
+DB_PATH_TEST = '../data/db.sqlite3'

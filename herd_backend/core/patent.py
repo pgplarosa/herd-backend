@@ -3,8 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
+from .utilities import DB_PATH, DB_PATH_TEST
 
-def get_patent_table(db_path='../data/db.sqlite3',
+# Set based on environment.
+DB = DB_PATH # or DB_PATH_TEST
+
+def get_patent_table(db_path=DB,
                      show=False):
     """ outputs a table with columns: patent_filed, patent_type, status, 
         date_register, author, school
@@ -47,7 +51,7 @@ def get_patent_table(db_path='../data/db.sqlite3',
         
     return df
     
-def get_patent_type_univ(db_path='../data/db.sqlite3',
+def get_patent_type_univ(db_path=DB,
                     plot=False):
     """ count the number of research type per university
     
@@ -94,7 +98,7 @@ def get_patent_type_univ(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_patent_type_univ_break(school_name, db_path='../data/db.sqlite3',
+def get_patent_type_univ_break(school_name, db_path=DB,
                                show=False):
     """ count the number of research type for university
     
@@ -142,7 +146,7 @@ def get_patent_type_univ_break(school_name, db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_patent_type(db_path='../data/db.sqlite3',
+def get_patent_type(db_path=DB,
                     plot=False):
     """ count the number of research type
     
@@ -180,7 +184,7 @@ def get_patent_type(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_patent_status(db_path='../data/db.sqlite3',
+def get_patent_status(db_path=DB,
                       plot=False):
     """ count the number of research status
     
@@ -218,7 +222,7 @@ def get_patent_status(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-def get_patent_yearly(db_path='../data/db.sqlite3',
+def get_patent_yearly(db_path=DB,
                       plot=False):
     """ count the number of patents per year
     
@@ -255,4 +259,4 @@ def get_patent_yearly(db_path='../data/db.sqlite3',
         
     return df.to_json(orient='columns')
 
-patent_yearly = get_patent_yearly(plot=True)
+# patent_yearly = get_patent_yearly(plot=True)

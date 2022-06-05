@@ -3,8 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
+from .utilities import DB_PATH, DB_PATH_TEST
 
-def get_regional_development_table(db_path='../data/db.sqlite3',
+DB = DB_PATH
+
+def get_regional_development_table(db_path=DB,
                                  show=False):
     """ outputs a table with columns: title, author, university, budget, 
         funding agency, source, funding type
