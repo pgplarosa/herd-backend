@@ -74,7 +74,6 @@ def get_faculty_educ_attain(db_path=DB,
     df = pd.crosstab(df.University, 
                      df.Education).sort_index(ascending=False)
     
-    df = df.sum(axis=1)
     if plot:
         df.plot.barh()
         plt.show()

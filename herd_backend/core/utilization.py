@@ -41,7 +41,7 @@ def get_utilization_table(db_path=DB,
     if show:
         display(df)
 
-    return df
+    return df.to_json(orient='columns')
     
 def get_utilization_product_univ(db_path=DB,
                     plot=False):
@@ -73,7 +73,6 @@ def get_utilization_product_univ(db_path=DB,
     df = pd.crosstab(df.University, 
                      df.Product).sort_index(ascending=False)
     
-    df = df.sum(axis=1)
     if plot:
         df.plot.barh()
         plt.show()

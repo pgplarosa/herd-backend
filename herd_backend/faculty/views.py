@@ -1,11 +1,15 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
 
 from core.faculty import get_faculty_profile_table as faculty_profile
-from core.faculty import get_faculty_educ_attain
+from core.faculty import get_faculty_educ_attain, get_faculty_educ_attain_break
 
 from core.utilities import makeJsonResponse, get_columns, invert_table, \
         create_stacked_bar_chart_data
+
+from . consts import QUERY_PARAM_SCHOOL_NAME
+
+import json
 
 ######################################
 #      FACULTY PROFILE               #
@@ -18,3 +22,9 @@ def get_faculty_profile(request):
 
 def get_faculty_education(request):
     return JsonResponse(create_stacked_bar_chart_data(get_faculty_educ_attain()), safe=False)
+
+def get_faculty_education_breakdown(request):
+    if school_name := request.GET.get(QUERY_PARAM_SCHOOL_NAME):
+        return JsonResponse(json.loads(get_faculty_educ_attain_break(school_name)), safe=False)
+    
+    return HttpResponse(status=404)
