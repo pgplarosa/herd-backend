@@ -217,3 +217,35 @@ def get_research_cost_budget_line(db_path=DB,
         plt.show()
 
     return df.to_json(orient='columns')
+    
+def get_research_cost_university_scatter(df='../data/cleaned/research_profile_updated.xlsx'):
+    df = pd.read_excel(df)
+    univ = df[['University (Abbreviation)', 'Allocated Budget (PH Pesos) 1,000,000.00']]
+    univ.columns = ['University', 'Budget']
+    univ_counts = pd.DataFrame(univ.groupby('University')['University'].agg('count'))
+    univ_counts = univ_counts.rename({'University':'Research Count'}, axis=1)
+
+    univ_budget = pd.DataFrame(univ.groupby('University')['Budget'].agg('sum'))
+    univ_budget = univ_budget.rename({'Budget':'Total Budget'}, axis=1)
+
+    univ_final = univ_counts.join(univ_budget)
+    univ_final['Ratio'] = univ_final['Total Budget']/univ_final['Research Count']
+    univ_final['Ratio'] = univ_final['Ratio'].apply(lambda x: round(x))
+
+    return univ_final.to_json(orient='columns')
+
+def get_research_cost_region_scatter(df='../data/cleaned/research_profile_updated.xlsx'):
+    df = pd.read_excel(df)    
+    region = df[['Region', 'Allocated Budget (PH Pesos) 1,000,000.00']]
+    region.columns = ['Region', 'Budget']
+    region_counts = pd.DataFrame(region.groupby('Region')['Region'].agg('count'))
+    region_counts = region_counts.rename({'Region':'Research Count'}, axis=1)
+
+    region_budget = pd.DataFrame(region.groupby('Region')['Budget'].agg('sum'))
+    region_budget = region_budget.rename({'Budget':'Total Budget'}, axis=1)
+
+    region_final = region_counts.join(region_budget)
+    region_final['Ratio'] = region_final['Total Budget']/region_final['Research Count']
+    region_final['Ratio'] = region_final['Ratio'].apply(lambda x: round(x))
+
+    return region_final.to_json(orient='columns')

@@ -32,8 +32,6 @@ def get_abstract_analysis_table(show=False):
         display(df)
     return df.to_json(orient='columns')
 
-# aa_table = get_abstract_analysis_table(show=True)
-
 def get_research_by_suc(show=False):
     """ counts the topics per SUC
     
@@ -152,6 +150,77 @@ def get_research_by_region(show=False):
     df = df.pivot(index='Region', columns='topics', values='count').fillna(0)
     df = df.loc[temp, temp1].drop('Outliers', axis=1)
 
+    if show:
+        display(df)
+    return df.to_json(orient='columns')
+
+def get_research_by_agency(show=False):
+    """ counts the topics per agency
+    
+    Parameters
+    ===========
+    show         :      bool
+                        print table if set to true
+                        
+    Returns
+    ===========
+    get_research_by_agency    :   str
+                                  json string
+    """
+    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
+    df['Topic Name'] = df['Topic Name'].str.title()
+    temp = df[['Funding Agency', 'Topic Name']].dropna()
+    temp['Funding Agency'] = df['Funding Agency'].str.split('; ')
+    temp = temp.explode('Funding Agency')
+    temp = temp[temp['Topic Name'] != 'Outliers']
+    temp = temp[temp['Funding Agency'] != 'Personal']
+    temp = temp['Funding Agency'].value_counts().head(15).index
+    temp1 = df[['Topic Name']].value_counts()
+    temp1.drop('Outliers', inplace=True)
+    temp1 = temp1.reset_index()['Topic Name'].values
+    df = df[['Funding Agency', 'Topic Name']].dropna()
+    df['Funding Agency'] = df['Funding Agency'].str.split('; ')
+    df = df.explode('Funding Agency')
+    df = (df[df['Topic Name'] != 'Outliers']
+          .groupby(['Funding Agency', 'Topic Name']).size().to_frame().reset_index())
+    df.columns = ['Funding Agency', 'topics', 'count']
+    df = df.pivot(index='Funding Agency', columns='topics', values='count').fillna(0)
+    df = df.loc[temp, temp1]
+    
+    if show:
+        display(df)
+    return df.to_json(orient='columns')
+
+def get_research_by_budget(show=False):
+    """ counts the topics per budget
+    
+    Parameters
+    ===========
+    show         :      bool
+                        print table if set to true
+            
+    Returns
+    ===========
+    get_research_by_agency    :   str
+                                  json string
+    """
+    df = pd.read_excel(os.path.join(CLEANED_DATA_PATH, 'research_profile_updated.xlsx'))
+    df['Topic Name'] = df['Topic Name'].str.title()
+    df = df[['Allocated Budget (PH Pesos) 1,000,000.00', 'Topic Name']].dropna()
+    df['Allocated Budget (PH Pesos) 1,000,000.00'] = (
+        df['Allocated Budget (PH Pesos) 1,000,000.00']
+        .apply(lambda x: x.split('; ') if isinstance(x, str) else x))
+    df = df.explode('Allocated Budget (PH Pesos) 1,000,000.00')
+    df = df[df['Topic Name'] != 'Outliers']
+    df['Allocated Budget (PH Pesos) 1,000,000.00'] = (
+        df['Allocated Budget (PH Pesos) 1,000,000.00']
+        .apply(lambda x: x.replace(',','') if isinstance(x, str) else x)
+        .astype(float))
+    df = df[df['Allocated Budget (PH Pesos) 1,000,000.00'] > 0]
+    df = (df.groupby('Topic Name')['Allocated Budget (PH Pesos) 1,000,000.00'].sum())
+    df = df.sort_values().to_frame()
+    df.columns = ['Total Allocated Budget']
+    
     if show:
         display(df)
     return df.to_json(orient='columns')

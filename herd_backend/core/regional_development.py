@@ -44,4 +44,7 @@ def get_regional_development_table(db_path=DB,
     if show:
         display(df)
     return df.to_json(orient='columns')
-    
+
+def get_sdg_topics_table(df='../data/cleaned/sdg_topics.xlsx'):
+    df = pd.read_excel(df)
+    return df.to_json(orient='columns')    
