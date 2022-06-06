@@ -3,7 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
-from .utilities import DB_PATH, DB_PATH_TEST
+from .utilities import DB_PATH, DB_PATH_TEST, CLEANED_DATA_PATH
+import os
 
 DB = DB_PATH
 
@@ -218,7 +219,7 @@ def get_research_cost_budget_line(db_path=DB,
 
     return df.to_json(orient='columns')
     
-def get_research_cost_university_scatter(df='../data/cleaned/research_profile_updated.xlsx'):
+def get_research_cost_university_scatter(df=os.path.join(CLEANED_DATA_PATH, '../data/cleaned/research_profile_updated.xlsx')):
     df = pd.read_excel(df)
     univ = df[['University (Abbreviation)', 'Allocated Budget (PH Pesos) 1,000,000.00']]
     univ.columns = ['University', 'Budget']
@@ -234,7 +235,7 @@ def get_research_cost_university_scatter(df='../data/cleaned/research_profile_up
 
     return univ_final.to_json(orient='columns')
 
-def get_research_cost_region_scatter(df='../data/cleaned/research_profile_updated.xlsx'):
+def get_research_cost_region_scatter(df=os.path.join(CLEANED_DATA_PATH, '../data/cleaned/research_profile_updated.xlsx')):
     df = pd.read_excel(df)    
     region = df[['Region', 'Allocated Budget (PH Pesos) 1,000,000.00']]
     region.columns = ['Region', 'Budget']

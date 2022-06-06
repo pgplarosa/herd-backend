@@ -3,7 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 from sqlalchemy import create_engine
-from .utilities import DB_PATH, DB_PATH_TEST
+from .utilities import DB_PATH, DB_PATH_TEST, CLEANED_DATA_PATH
+import os
 
 DB = DB_PATH
 
@@ -45,6 +46,6 @@ def get_regional_development_table(db_path=DB,
         display(df)
     return df.to_json(orient='columns')
 
-def get_sdg_topics_table(df='../data/cleaned/sdg_topics.xlsx'):
+def get_sdg_topics_table(df=os.path.join(CLEANED_DATA_PATH, 'sdg_topics.xlsx')):
     df = pd.read_excel(df)
     return df.to_json(orient='columns')    

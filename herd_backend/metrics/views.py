@@ -12,7 +12,7 @@ from core.utilization import get_utilization_topics as util_topics
 from core.utilization import get_utilization_beneficiaries as util_beneficiaries
 from core.utilization import get_utilization_yearly as utilization_forecast
 
-from core.regional_development import get_regional_development_table as regional_development_table
+from core.regional_development import get_regional_development_table as regional_development_table, get_sdg_topics_table
 
 from core.utilities import makeJsonResponse, get_columns, process_for_response, invert_table, create_stacked_bar_chart_data
 
@@ -67,3 +67,6 @@ def get_utilization_forecast(request):
 
 def get_regional_development_table(request):
     return JsonResponse(invert_table(regional_development_table()), safe=False)
+
+def get_regional_development_sdg_topics_table(request):
+    return JsonResponse(invert_table(get_sdg_topics_table()), safe=False)

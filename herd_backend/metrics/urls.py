@@ -14,4 +14,5 @@ urlpatterns = [
     path('utilization/beneficiaries/', views.get_beneficiaries_per_university, name="utilization_beneficiaries"),
     path('utilization/forecast/', views.get_utilization_forecast, name="utilization_forecast"),
     path('regional-development/', views.get_regional_development_table, name="regional_development"),
+    path('regional-development/sdg-topics', views.get_regional_development_sdg_topics_table, name="regional_development_sdg_topics"),
 ]
