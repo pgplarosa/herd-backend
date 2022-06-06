@@ -5,6 +5,7 @@ from core.research_cost import get_research_cost_budget
 from core.research_cost import get_research_cost_funding_type as funding_type
 from core.research_cost import get_research_cost_funding_source as funding_source
 from core.research_cost import get_research_cost_budget_line as funding_forecast
+from core.research_cost import get_research_cost_university_scatter, get_research_cost_region_scatter
 
 from core.utilization import get_utilization_table as utilization_table
 from core.utilization import get_utilization_product_univ as util_product_per_univ
@@ -38,6 +39,12 @@ def get_research_funding_source(request):
 
 def get_research_funding_forecast(request):
     return makeJsonResponse(funding_forecast())
+
+def get_research_cost_univ_scatter(request):
+    return JsonResponse(invert_table(get_research_cost_university_scatter(), index_name="University", preserve_index=True), safe=False)
+
+def get_research_cost_rgn_scatter(request):
+    return JsonResponse(invert_table(get_research_cost_region_scatter(), index_name="Region", preserve_index=True), safe=False)
 
 ######################################
 #             UTILIZATION            #

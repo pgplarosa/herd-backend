@@ -22,13 +22,15 @@ def makeJsonResponse(response_body, metadata=None, is_modified=False):
 
     return JsonResponse(convert_to_json(response_body), safe=False)
 
-def invert_table(table, is_string=True) -> dict:
+def invert_table(table, is_string=True, index_name = "default", preserve_index=False) -> dict:
     dict_table = table
     if is_string:
         dict_table = json.loads(table)
 
     columns = list(dict_table.keys())
-    rows = by_row(dict_table)
+    if preserve_index:
+        columns = [index_name] + columns
+    rows = by_row(dict_table, index_name, preserve_index)
     inverted_table = {
         "columns": columns,
         "rows": rows
@@ -36,23 +38,31 @@ def invert_table(table, is_string=True) -> dict:
 
     return inverted_table
 
-def by_row(table: dict) -> list:
+def by_row(table: dict, index_name, preserve_index) -> list:
     if not table:
         return []
     
     processed_table = {column: list(table[column].values()) for column in table}
+    # import pdb; pdb.set_trace()
     
     row_count = len(processed_table[list(processed_table.keys())[0]])
 
     columns = list(processed_table.keys())
+    universities = []
+    if preserve_index:
+        universities = list(table.get('Total Budget').keys())
 
     rows = []
     for index in range(0, row_count):
         new_row = {}
         for column in columns:
             new_row[column] = processed_table[column][index]
+            if preserve_index:
+                new_row[index_name] = universities[index]
         rows.append(new_row)
 
+    if preserve_index:
+        columns.append(index_name)
     return rows
 
 def create_stacked_bar_chart_data(data, is_string=True):
