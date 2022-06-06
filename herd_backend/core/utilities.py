@@ -82,6 +82,7 @@ DB_PATH = os.path.abspath('../herd_backend/data/db.sqlite3')
 MODELS_PATH = os.path.abspath('./core/models')
 CLEANED_DATA_PATH = os.path.abspath('../herd_backend/data/cleaned')
 SUC_NETWORK_PATH = os.path.abspath('./core/models/networks/suc_network.json')
+FACULTY_NETWORK_PATH = os.path.abspath('./core/models/networks/faculty_network.json')
 
 # DB PATH FOR TESTING
 DB_PATH_TEST = '../data/db.sqlite3'
