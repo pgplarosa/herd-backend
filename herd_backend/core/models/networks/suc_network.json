@@ -70,8 +70,8 @@
     "dc_plot": "ASSIST_dc.png",
     "bc_plot": "ASSIST_bc.png",
     "cc_plot": "ASSIST_cc.png",
-    "Modularity": 0.7836273893,
-    "Number of Communities": 12,
+    "Modularity": 0.7780064464,
+    "Number of Communities": 13,
     "Community List": {
       "0": [
         "Abalos, Michael Vene S.",
@@ -110,24 +110,60 @@
         "Viste, Sammy"
       ],
       "1": [
-        "Baldemor, Romeo Jr.",
-        "Balingit, Kae Ann Marie",
-        "De La Cruz, Joey M.",
-        "Dela Cruz, Joey M.",
-        "Gannapao, Jubert",
-        "Guidang, Excel Philip",
-        "Guidang, Excel Philip B.",
-        "Landa, Christopher John R.",
-        "Laureta, Max",
-        "Llanda, Christopher John",
-        "Llanda, Christopher John R.",
-        "Talingdan, Janelyn A.",
-        "Trinidad, Joventino T.",
-        "Trinidad, Joventino T. Jr.",
-        "Truqueza, Maria",
-        "Tuzon, Amor A."
+        "Alagao, Leila",
+        "Alejandre, Leandro S.",
+        "Anicas, Margie V.",
+        "Atmosfera, Verena",
+        "Baay, Joraidy B.",
+        "Barzuela, Mylene E.",
+        "Benas, Diomedes D.",
+        "Bobila, Wilma Jlona B.",
+        "Buenafe, Cristina J.",
+        "Buenafe, Glenn G.",
+        "Buenafe, John Paul B.",
+        "Buenafe, Mario",
+        "Castillo, Bernard B.",
+        "Dayag, Annaliza J.",
+        "De Vera, Bernard A.",
+        "Dickson, Ramarie F.",
+        "Fabito, Rovinson Q.",
+        "Fetalvero, Elizabeth C.",
+        "Labios, Guillermo P. Jr.",
+        "Licos, Artemio R. Jr.",
+        "Pacursa, Cristian Ivan",
+        "Pizarro, Maria Eden A.",
+        "Raranga, Dylan Edward",
+        "Raranga, Dylan Edward R.",
+        "Rarangga, Dylan Edward R.",
+        "Valera, Novelyn B.",
+        "Vallesteros, Manuel V.",
+        "Vasquez, Joey M.",
+        "Vasquez, Reymond S.",
+        "Viloria, Genelyn B.",
+        "Yahin, Rommel J.",
+        "Zales, Jonathan B.",
+        "Zales, Jonathan P."
       ],
       "2": [
+        "Bose, Alysa",
+        "Buanan, Herlyn B.",
+        "Maglaya, Medilyne B.",
+        "Marilag, Mary Rose",
+        "Patagao, Talugay G.",
+        "Pilarta, Mae Amalia B.",
+        "Pilor, May Lyn",
+        "Tamo, Christine"
+      ],
+      "3": [
+        "Alagao, Andyjul A.",
+        "Casipit, Mark Francis F.",
+        "Flores, Ma. Rita V.",
+        "Rafanan, Antonio R.",
+        "Tejero, Rodelyn T.",
+        "Tordil, Franxes Ghia U.",
+        "Valdez, Donna Joy C."
+      ],
+      "4": [
         "Alzate, Michelle Melinda B.",
         "Arconado, Patrick John L.",
         "Atmosfera, Verena G.",
@@ -149,49 +185,6 @@
         "Valera, Marian Loren B.",
         "Vitalis, Charlie A."
       ],
-      "3": [
-        "Alejandre, Leandro S.",
-        "Anicas, Margie V.",
-        "Atmosfera, Verena",
-        "Baay, Joraidy B.",
-        "Baay, Joraidyl B.",
-        "Barzuela, Mylene E.",
-        "Benas, Diomedes D.",
-        "Bersamira, Hazel T.",
-        "Bobila, Wilma Jlona B.",
-        "Buenafe, Mario",
-        "Castillo, Bernard B.",
-        "Dayag, Annaliza J.",
-        "Dickson, Ramarie F.",
-        "Fabito, Rovinson Q.",
-        "Fetalvero, Elizabeth C.",
-        "Licos, Artemio R. Jr.",
-        "Raranga, Dylan Edward",
-        "Raranga, Dylan Edward R.",
-        "Rarangga, Dylan Edward R.",
-        "Romero, John Mark",
-        "Vallesteros, Manuel V.",
-        "Vasquez, Joey M.",
-        "Vasquez, Reymond S.",
-        "Viloria, Genelyn B.",
-        "Yahin, Rommel J.",
-        "Zales, Jonathan B."
-      ],
-      "4": [
-        "Abalos, Michael Vene",
-        "Atmosfera, Rynheart",
-        "Bagioan, Elsa D.",
-        "Bagioan, Michaela Isabelle D.",
-        "Begnalen, Ramelda B.",
-        "Bersamira, Hazel",
-        "Bigornia, Michael Vincent",
-        "Bigornia, Michael Vincent B.",
-        "Paderes, Nero",
-        "Palcon, Gerardo",
-        "Quileza, Rhea",
-        "Turqueza, Peri Jayson",
-        "Velarde, Maria Anngelli L."
-      ],
       "5": [
         "Belisario, Lydiason",
         "Casabar, Judith",
@@ -202,36 +195,57 @@
         "Visco, Dionisio"
       ],
       "6": [
-        "Alagao, Andyjul A.",
-        "Casipit, Mark Francis F.",
-        "Flores, Ma. Rita V.",
-        "Rafanan, Antonio R.",
-        "Tejero, Rodelyn T.",
-        "Tordil, Franxes Ghia U.",
-        "Valdez, Donna Joy C."
+        "Abalos, Michael Vene",
+        "Abat, John Lord",
+        "Atmosfera, Rynheart",
+        "Bagioan, Elsa D.",
+        "Bagioan, Michaela Isabelle D.",
+        "Begnalen, Ramelda B.",
+        "Bersamira, Hazel",
+        "Bides, Jestoni B.",
+        "Bigornia, Michael Vincent",
+        "Bigornia, Michael Vincent B.",
+        "Gonzalo, Gemma",
+        "Paderes, Nero",
+        "Palcon, Gerardo",
+        "Quileza, Rhea",
+        "Taclawan, Bersheeba L.",
+        "Tamayo, Mark Jensen",
+        "Tumalip, Marie Ann A.",
+        "Turqueza, Peri Jayson",
+        "Valencia, Jordan S.",
+        "Vasquez, Reymond",
+        "Velarde, Maria Anngelli L."
       ],
       "7": [
-        "Alagao, Leila",
-        "Alcos, Ranier Mark",
-        "Buenafe, Cristina J.",
-        "Buenafe, Glenn G.",
-        "Buenafe, John Paul B.",
-        "Carbonilla, Eucensio B.",
-        "De Vera, Bernard",
-        "De Vera, Bernard A.",
-        "Labios, Guillermo Jr.",
-        "Labios, Guillermo P. Jr.",
-        "Lomboy, Orlando A.",
-        "Pacursa, Cristian Ivan",
-        "Pizarro, Eden",
-        "Pizarro, Maria Eden A.",
-        "Tamayo, Rodel",
-        "Tebia, Rex",
-        "Valera, Novelyn B.",
-        "Vasquez, Reymond",
-        "Zales, Jonathan P."
+        "Baldemor, Romeo Jr.",
+        "Balingit, Kae Ann Marie",
+        "De La Cruz, Joey M.",
+        "Dela Cruz, Joey M.",
+        "Gannapao, Jubert",
+        "Guidang, Excel Philip",
+        "Guidang, Excel Philip B.",
+        "Landa, Christopher John R.",
+        "Laureta, Max",
+        "Llanda, Christopher John",
+        "Llanda, Christopher John R.",
+        "Talingdan, Janelyn A.",
+        "Trinidad, Joventino T.",
+        "Trinidad, Joventino T. Jr.",
+        "Truqueza, Maria",
+        "Tuzon, Amor A."
       ],
       "8": [
+        "Alcos, Ranier Mark",
+        "Carbonilla, Eucensio B.",
+        "De Vera, Bernard",
+        "Labios, Guillermo Jr.",
+        "Lomboy, Orlando A.",
+        "Pizarro, Eden",
+        "Tamayo, Rodel",
+        "Tebia, Rex"
+      ],
+      "9": [
         "Alingasa, Marvin",
         "Altero, Rovinson",
         "Baldemor, Romeo B.",
@@ -242,7 +256,7 @@
         "Tauro, Aurelio",
         "Viste, Armando"
       ],
-      "9": [
+      "10": [
         "Agwayan, Drexel Jay F.",
         "Alagao, Marilyn J.",
         "Alagao, Prestine Joy",
@@ -262,34 +276,18 @@
         "Villamor, Edel Christy D.",
         "Viste, Sammy B."
       ],
-      "10": [
-        "Abat, John Lord",
-        "Bides, Jestoni B.",
+      "11": [
         "Blanza, Analy",
         "Bugtong, Jenesis C.",
         "Gabay, Ahmed",
-        "Gonzalo, Gemma",
         "Gonzalo, Gemma P.",
         "Gozos, Zairohn Khaine",
         "Reyes, Fastine May",
-        "Taclawan, Bersheeba L.",
-        "Tamayo, Mark Jensen",
         "Timbreza, Lorrea Joyce",
         "Torres, Romah",
-        "Trinidad, Joyce Anne B.",
-        "Tumalip, Marie Ann A.",
-        "Valencia, Jordan S."
+        "Trinidad, Joyce Anne B."
       ],
-      "11": [
-        "Bose, Alysa",
-        "Buanan, Herlyn B.",
-        "Maglaya, Medilyne B.",
-        "Marilag, Mary Rose",
-        "Patagao, Talugay G.",
-        "Pilarta, Mae Amalia B.",
-        "Pilor, May Lyn",
-        "Tamo, Christine"
-      ]
+      "12": ["Baay, Joraidyl B.", "Bersamira, Hazel T.", "Romero, John Mark"]
     },
     "community_plot": "ASSIST_communities.png"
   },
@@ -396,10 +394,56 @@
     "dc_plot": "BSU_dc.png",
     "bc_plot": "BSU_bc.png",
     "cc_plot": "BSU_cc.png",
-    "Modularity": 0.80573829,
-    "Number of Communities": 9,
+    "Modularity": 0.80357427,
+    "Number of Communities": 8,
     "Community List": {
       "0": [
+        "Besic, Elvira",
+        "Bueno, Crisanta",
+        "Clerget Benoît, Egle Rohilyn B.",
+        "Garcia, Jose Nestor M.",
+        "Gaya, Sayrha Fe A.",
+        "Layaoen, Heathel",
+        "Ligat, Bonie S.",
+        "Loren Dionora J.",
+        "Matso, Nover M.",
+        "Medina, Simplicio M.",
+        "Pablo, Janet P.",
+        "Pagadan, Casiano S.",
+        "Parao, Marissa R.",
+        "Sta Cruz Pompe C.",
+        "Sunio, Domingo Abigail J.",
+        "Tanguid, Leon B.",
+        "Untalan, Paquito P.",
+        "Wagan, Amparo M.",
+        "Yabes, Melbrenne"
+      ],
+      "1": [
+        "Anacin, Carljhonson",
+        "Anacio, Danesto B.",
+        "Antonio, Jhunedyn M.",
+        "Bacate, Margarette M.",
+        "Bestre, Erlinda",
+        "Bestre, Erlinda C.",
+        "Buot Jr., Inocencio E.",
+        "Butag, Jackson L.",
+        "Cervantes, Starleene S.",
+        "Fomeg-As, David Y.",
+        "Gomez Jr., Romeo A.",
+        "Guron, Maricel A.",
+        "Ladoan, Sheinalene M.",
+        "Lasangen, Wileen Chiara T.",
+        "Lit Jr., Ireneo L.",
+        "Lumiquio, Arsenia M.",
+        "Lumpio, Rey G.",
+        "Napadlet, Jones T.",
+        "Paing, Joyce N.",
+        "Reyes, Gaudelia A.",
+        "Sotto, Rachel C.",
+        "Vicente, Gina D.",
+        "Zafaralla, Macrina T."
+      ],
+      "2": [
         "Abadillos, Mg",
         "Alfonso, Gerry P.",
         "Baliton, Romnick S.",
@@ -420,7 +464,7 @@
         "Rodriguez, Ramil S.",
         "Visco, Roberto G."
       ],
-      "1": [
+      "3": [
         "Anacioco, Kamae P.",
         "Baoanan, Zenaida G.",
         "Bayer, Derek C.",
@@ -453,7 +497,7 @@
         "Seo, Yeon Ok",
         "Son, Yeong Mo"
       ],
-      "2": [
+      "4": [
         "Altaki, Mary An J.",
         "Batani, Ruth S.",
         "Bañez, Alladin A.",
@@ -468,62 +512,25 @@
         "Sa-Ao, Beverly C.",
         "Tagarino, Darlyn D."
       ],
-      "3": [
-        "Angeles, Yolanda B.",
-        "Ciolkosz, Daniel E.",
-        "Dulay, Alvin C.",
-        "Dumalhin, Leonardo D.",
-        "Galad, Marlon N.",
-        "Kimkiman, Nazer Sarapeo P.",
-        "Launio, Cheryll C.",
-        "Luis, Janet S.",
-        "Meana, Vanessa Rose L.",
-        "Onalan, Milagros B.",
-        "Pagnas, Keithlern M.",
-        "Smeets, Alex",
-        "Sotelo, Marycris",
-        "Suclad, Roger Lee M.",
-        "Sudaypan Sr., Constantino T.",
-        "Valentin, Marvin T."
-      ],
-      "4": [
-        "Besic, Elvira",
-        "Bueno, Crisanta",
-        "Clerget Benoît, Egle Rohilyn B.",
-        "Garcia, Jose Nestor M.",
-        "Gaya, Sayrha Fe A.",
-        "Layaoen, Heathel",
-        "Ligat, Bonie S.",
-        "Loren Dionora J.",
-        "Matso, Nover M.",
-        "Medina, Simplicio M.",
-        "Pablo, Janet P.",
-        "Pagadan, Casiano S.",
-        "Parao, Marissa R.",
-        "Sta Cruz Pompe C.",
-        "Sunio, Domingo Abigail J.",
-        "Tanguid, Leon B.",
-        "Untalan, Paquito P.",
-        "Wagan, Amparo M.",
-        "Yabes, Melbrenne"
-      ],
       "5": [
-        "Antonio, Jhunedyn M.",
-        "Bacate, Margarette M.",
-        "Bestre, Erlinda",
-        "Bestre, Erlinda C.",
-        "Buot Jr., Inocencio E.",
-        "Butag, Jackson L.",
-        "Cervantes, Starleene S.",
-        "Guron, Maricel A.",
-        "Ladoan, Sheinalene M.",
-        "Lit Jr., Ireneo L.",
-        "Lumiquio, Arsenia M.",
-        "Lumpio, Rey G.",
-        "Napadlet, Jones T.",
-        "Sotto, Rachel C.",
-        "Vicente, Gina D.",
-        "Zafaralla, Macrina T."
+        "Abiasen, Jovalson T.",
+        "Alimondo, Monica S.",
+        "Buasen, Julie A.",
+        "Dolipas, Bretel B.",
+        "Dolipas,Bretel B.",
+        "Fulwani, Danni Loven",
+        "Lubrica, Joel V.",
+        "Lubrica, Maria Azucena B.",
+        "Madinno, Carmelo",
+        "Ocampo, Phil S.",
+        "Pakipac, Kenneth B.",
+        "Ramos , Jennifer Lyn S.",
+        "Ramos, Jennifer Lyn",
+        "Ramos, Jennifer Lyn S.",
+        "Sajise, Marycel T.",
+        "Samuel, Freda Kate D.",
+        "Valentin, Precious M.",
+        "Wadasen, Russel Fits P."
       ],
       "6": [
         "Alawas, Dolores E.",
@@ -546,33 +553,22 @@
         "Parcasio, Imelda G."
       ],
       "7": [
-        "Abiasen, Jovalson T.",
-        "Alimondo, Monica S.",
-        "Buasen, Julie A.",
-        "Dolipas, Bretel B.",
-        "Dolipas,Bretel B.",
-        "Fulwani, Danni Loven",
-        "Lubrica, Joel V.",
-        "Lubrica, Maria Azucena B.",
-        "Madinno, Carmelo",
-        "Ocampo, Phil S.",
-        "Pakipac, Kenneth B.",
-        "Ramos , Jennifer Lyn S.",
-        "Ramos, Jennifer Lyn",
-        "Ramos, Jennifer Lyn S.",
-        "Sajise, Marycel T.",
-        "Samuel, Freda Kate D.",
-        "Valentin, Precious M.",
-        "Wadasen, Russel Fits P."
-      ],
-      "8": [
-        "Anacin, Carljhonson",
-        "Anacio, Danesto B.",
-        "Fomeg-As, David Y.",
-        "Gomez Jr., Romeo A.",
-        "Lasangen, Wileen Chiara T.",
-        "Paing, Joyce N.",
-        "Reyes, Gaudelia A."
+        "Angeles, Yolanda B.",
+        "Ciolkosz, Daniel E.",
+        "Dulay, Alvin C.",
+        "Dumalhin, Leonardo D.",
+        "Galad, Marlon N.",
+        "Kimkiman, Nazer Sarapeo P.",
+        "Launio, Cheryll C.",
+        "Luis, Janet S.",
+        "Meana, Vanessa Rose L.",
+        "Onalan, Milagros B.",
+        "Pagnas, Keithlern M.",
+        "Smeets, Alex",
+        "Sotelo, Marycris",
+        "Suclad, Roger Lee M.",
+        "Sudaypan Sr., Constantino T.",
+        "Valentin, Marvin T."
       ]
     },
     "community_plot": "BSU_communities.png"
@@ -680,16 +676,23 @@
     "dc_plot": "DNSC_dc.png",
     "bc_plot": "DNSC_bc.png",
     "cc_plot": "DNSC_cc.png",
-    "Modularity": 0.6968710954,
+    "Modularity": 0.6974177426,
     "Number of Communities": 9,
     "Community List": {
       "0": [
-        "Bernaldez, Edison",
-        "Cantere, Bonita",
-        "Fermil, Florie Ann L.",
-        "Lanoy, Junry",
-        "Law-Ay, Sadie D.",
-        "Santamaria, Josiedel"
+        "Buladaco, Jumar S.",
+        "Buladaco, Mark Van M.",
+        "Cantero, Laarni M.",
+        "Cutad, Reir Erlinda",
+        "Dabalos, Jonilyn T.",
+        "Delos Reyes, Ian Val P.",
+        "Denila, Pamila Grace",
+        "Gamao, Ariel O.",
+        "Gameng, A.",
+        "Gameng, Hazel A.",
+        "Masagnkay, Rogelio A.",
+        "Padios, Ian Jay T.",
+        "Tejada, Jonilyn A."
       ],
       "1": [
         "Borlio, Jevannel G.",
@@ -717,6 +720,15 @@
         "Vo, Dieu Linh"
       ],
       "3": [
+        "Bernaldez, Edison",
+        "Cantere, Bonita",
+        "Fermil, Florie Ann L.",
+        "Lanoy, Junry",
+        "Law-Ay, Sadie D.",
+        "Pelone, Boyeth C.",
+        "Santamaria, Josiedel"
+      ],
+      "4": [
         "Besas, Jesebel R.",
         "Esprela, Liezel T.",
         "Micabani, Neal Reggie",
@@ -728,7 +740,7 @@
         "Tabinas, Ria Jayne A.",
         "Torrejos, Sevetrim B."
       ],
-      "4": [
+      "5": [
         "Agod, Joena Marie M.",
         "Albite, Carlo Jay",
         "Alfeche, Aivie V.",
@@ -737,32 +749,7 @@
         "Gallano, Gerry Louis O.",
         "Monreal, Mecah Ellah"
       ],
-      "5": [
-        "Buladaco, Jumar S.",
-        "Buladaco, Mark Van M.",
-        "Cantero, Laarni M.",
-        "Cutad, Reir Erlinda",
-        "Dabalos, Jonilyn T.",
-        "Delos Reyes, Ian Val P.",
-        "Denila, Pamila Grace",
-        "Gamao, Ariel O.",
-        "Gameng, A.",
-        "Gameng, Hazel A.",
-        "Masagnkay, Rogelio A.",
-        "Padios, Ian Jay T.",
-        "Pelone, Boyeth C.",
-        "Tejada, Jonilyn A."
-      ],
       "6": [
-        "Alipoyo, Joan Cristin E.",
-        "Bero, Quirino M.",
-        "Edullantes, Christine Mae A.",
-        "Guanzon, Grace C.",
-        "Gumaano, Girley S.",
-        "Sotomil, Joey P.",
-        "Tejada, Rosie Lynn P."
-      ],
-      "7": [
         "Andam, Michael B.",
         "Delima, Shamae Ria R.",
         "Manuales, Zoilyn B.",
@@ -772,6 +759,15 @@
         "Saligan, Rosario",
         "Saligan, Rosario B.",
         "Turno, Rey B."
+      ],
+      "7": [
+        "Alipoyo, Joan Cristin E.",
+        "Bero, Quirino M.",
+        "Edullantes, Christine Mae A.",
+        "Guanzon, Grace C.",
+        "Gumaano, Girley S.",
+        "Sotomil, Joey P.",
+        "Tejada, Rosie Lynn P."
       ],
       "8": [
         "Centina, Jean D.",
@@ -1118,6 +1114,82 @@
     "dc_plot": "RSU_dc.png",
     "bc_plot": "RSU_bc.png",
     "cc_plot": "RSU_cc.png",
+    "Modularity": null,
+    "Number of Communities": null,
+    "Community List": null,
+    "community_plot": null
+  },
+  "QSU": {
+    "Profile": 2,
+    "Nodes": 41,
+    "Edges": 87,
+    "Average Degree": 4.243902439,
+    "Maximum Degree": [
+      {
+        "name": " Camayang, Jamina G.",
+        "value": 10
+      }
+    ],
+    "degree_distrib": "QSU_degree.png",
+    "network_plot": "QSU.png",
+    "GC Nodes": 11,
+    "GC Edges": 31,
+    "GC Average Degree": 5.6363636364,
+    "GC Maximum Degree": [
+      {
+        "name": " Camayang, Jamina G.",
+        "value": 10
+      }
+    ],
+    "gc_degree_distrib": "QSU_gc_degree.png",
+    "gc_network_plot": "QSU_gc.png",
+    "Average Shortest Path": 1.4363636364,
+    "Clustering Coefficient": 0.9515151515,
+    "Top 3 Degree Centrality": [
+      {
+        "name": " Camayang, Jamina G.",
+        "value": 1
+      },
+      {
+        "name": " Velasco, Ma. Kristine Grace T.",
+        "value": 0.6
+      },
+      {
+        "name": "Legaspi, Jhay Mar E.",
+        "value": 0.6
+      }
+    ],
+    "Top 3 Betweenness Centrality": [
+      {
+        "name": " Camayang, Jamina G.",
+        "value": 0.5333333333
+      },
+      {
+        "name": " Camayang, Arben Gibson G.",
+        "value": 0
+      },
+      {
+        "name": " Velasco, Ma. Kristine Grace T.",
+        "value": 0
+      }
+    ],
+    "Top 3 Closeness Centrality": [
+      {
+        "name": " Camayang, Jamina G.",
+        "value": 1
+      },
+      {
+        "name": " Velasco, Ma. Kristine Grace T.",
+        "value": 0.7142857143
+      },
+      {
+        "name": "Legaspi, Jhay Mar E.",
+        "value": 0.7142857143
+      }
+    ],
+    "dc_plot": "QSU_dc.png",
+    "bc_plot": "QSU_bc.png",
+    "cc_plot": "QSU_cc.png",
     "Modularity": null,
     "Number of Communities": null,
     "Community List": null,
