@@ -27,3 +27,15 @@ You are then set to start the server.
 ```
         python manage.py runserver 8080
 ```
+
+## Updating the Images Served
+
+For endpoints serving the images (charts, visualizations, etc.), make sure to put them on the right directories.
+
+Run this command every time there is an update to the images:
+
+1. Go to `herd_backend` folder.
+
+```
+        python manage.py collectstatic
+```

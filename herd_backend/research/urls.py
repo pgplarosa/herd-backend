@@ -19,4 +19,5 @@ urlpatterns = [
     path('abstract/research-by-region', views.get_abstract_research_by_region, name="research_by_region"),
     path('abstract/research-by-agency', views.get_abstract_research_by_agency, name="research_by_agency"),
     path('abstract/research-by-budget', views.get_abstract_research_by_budget, name="research_by_budget"),
+    path('abstract/keywords', views.get_research_keywords, name="research_keywords")
 ]

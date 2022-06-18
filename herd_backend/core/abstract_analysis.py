@@ -224,3 +224,22 @@ def get_research_by_budget(show=False):
     if show:
         display(df)
     return df.to_json(orient='columns')
+
+def get_topic_keywords_table(show=False):
+    """ show keywords for topics table
+    
+    Parameters
+    ===========
+    show         :      bool
+                        print table if set to true
+            
+    Returns
+    ===========
+    get_topic_keywords_table    :   str
+                                    json string
+    """
+    df = pd.read_csv(os.path.join(CLEANED_DATA_PATH, 'words_per_topic.csv'))
+    
+    if show:
+        display(df)
+    return df.to_json(orient='columns')

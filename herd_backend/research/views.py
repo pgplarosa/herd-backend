@@ -13,7 +13,7 @@ from core.patent import get_patent_yearly as patents_forecast
 from core.abstract_classification import abstract_classification
 from core.abstract_analysis import get_research_by_sdg, get_research_by_region, get_abstract_analysis_table, \
                                     get_research_by_suc, get_top_10_topics, get_research_by_agency, \
-                                    get_research_by_budget
+                                    get_research_by_budget, get_topic_keywords_table
 
 from core.utilities import process_for_response, get_columns, convert_to_json, invert_table, create_stacked_bar_chart_data
 from django.views.decorators.csrf import csrf_exempt
@@ -72,3 +72,6 @@ def get_abstract_research_by_agency(request):
 
 def get_abstract_research_by_budget(request):
     return JsonResponse(convert_to_json(get_research_by_budget()), safe=False)
+
+def get_research_keywords(request):
+    return JsonResponse(invert_table(get_topic_keywords_table()), safe=False)
